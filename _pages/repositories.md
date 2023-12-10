@@ -22,12 +22,12 @@ nav_order: 4
 </div>
 {% endif %}
 
-\n\n
+\
+\
 
 ## Collaborative projects
 
 I have had the opportunity to contribute to software packages that learn transport maps for generative modeling, solving inference problems, and representing probabilistic graphical models:
 
-*[TransportMaps*](https://transportmaps.mit.edu)*
-
-*[Monotone Parameterization Toolkit](https://measuretransport.github.io/MParT/)*
+[**TransportMaps**](https://transportmaps.mit.edu)\
+[**Monotone Parameterization Toolkit**](https://measuretransport.github.io/MParT/)
