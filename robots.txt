@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://baptistar.github.io/sitemap.xml
+Sitemap: https://www.ricardobaptista.com/sitemap.xml
