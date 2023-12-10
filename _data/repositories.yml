@@ -1,6 +1,5 @@
 github_repos:
-  - baptistar/ATM
   - baptistar/MGAN
+  - baptistar/ATM
   - baptistar/BOCS 
   - map-filters/StochasticMaps
-  - baptistar/GreedyPC
