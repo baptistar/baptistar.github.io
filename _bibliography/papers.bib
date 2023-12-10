@@ -1,84 +1,361 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
+@article{spantini2019coupling,
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  title={Coupling techniques for nonlinear ensemble filtering},
+  author={Spantini, Alessio and Baptista, Ricardo and Marzouk, Youssef},
+  journal={SIAM Review},
+  volume={64},
+  number={4},
+  pages={921--953},
+  year={2022},
+  publisher={SIAM},
+  abstract={We consider filtering in high-dimensional non-Gaussian state-space models with intractable transition kernels, nonlinear and possibly chaotic dynamics, and sparse observations in space and time. We propose a novel filtering methodology that harnesses transportation of measures, convex optimization, and ideas from probabilistic graphical models to yield robust ensemble approximations of the filtering distribution in high dimensions. Our approach can be understood as the natural generalization of the ensemble Kalman filter (EnKF) to nonlinear updates, using stochastic or deterministic couplings. The use of nonlinear updates can reduce the intrinsic bias of the EnKF at a marginal increase in computational cost. We avoid any form of importance sampling and introduce non-Gaussian localization approaches for dimension scalability. Our framework achieves state-of-the-art tracking performance on challenging configurations of the Lorenz-96 model in the chaotic regime.},
+  abbr={SIAM Review},
+  selected={true},
+  html={https://epubs.siam.org/doi/10.1137/20M1312204},
+  pdf={https://arxiv.org/pdf/1907.00389},
+  code={https://github.com/map-filters/stochasticMaps}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+@article{wang2023efficient,
+  title={Efficient Neural Network Approaches for Conditional Optimal Transport with Applications in Bayesian Inference},
+  author={Wang, Zheyu Oliver and Baptista, Ricardo and Marzouk, Youssef and Ruthotto, Lars and Verma, Deepanshu},
+  journal={arXiv:2310.16975},
+  year={2023},
+  abstract={We present two neural network approaches that approximate the solutions of static and dynamic conditional optimal transport (COT) problems, respectively. Both approaches enable sampling and density estimation of conditional probability distributions, which are core tasks in Bayesian inference. Our methods represent the target conditional distributions as transformations of a tractable reference distribution and, therefore, fall into the framework of measure transport. COT maps are a canonical choice within this framework, with desirable properties such as uniqueness and monotonicity. However, the associated COT problems are computationally challenging, even in moderate dimensions. To improve the scalability, our numerical algorithms leverage neural networks to parameterize COT maps. Our methods exploit the structure of the static and dynamic formulations of the COT problem. PCP-Map models conditional transport maps as the gradient of a partially input convex neural network (PICNN) and uses a novel numerical implementation to increase computational efficiency compared to state-of-the-art alternatives. COT-Flow models conditional transports via the flow of a regularized neural ODE; it is slower to train but offers faster sampling. We demonstrate their effectiveness and efficiency by comparing them with state-of-the-art approaches using benchmark datasets and Bayesian inverse problems.},
+  abbr={arXiv},
+  html={https://arxiv.org/abs/2310.16975},
+  pdf={https://arxiv.org/pdf/2310.16975},
+}
+
+@article{baptista2020adaptive,
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
+  title={On the representation and learning of monotone triangular transport maps},
+  author={Baptista, Ricardo and Marzouk, Youssef and Zahm, Olivier},
+  journal={Foundations of Computational Mathematics},
+  pages={1--46},
+  year={2023},
+  publisher={Springer},
+  abbr={FoCM},
+  selected={true},
+  abstract={Transportation of measure provides a versatile approach for modeling complex probability distributions, with applications in density estimation, Bayesian inference, generative modeling, and beyond. Monotone triangular transport maps---approximations of the Knothe–Rosenblatt (KR) rearrangement—--are a canonical choice for these tasks. Yet the representation and parameterization of such maps have a significant impact on their generality and expressiveness, and on properties of the optimization problem that arises in learning a map from data (e.g., via maximum likelihood estimation). We present a general framework for representing monotone triangular maps via invertible transformations of smooth functions. We establish conditions on the transformation such that the associated infinite-dimensional minimization problem has no spurious local minima, i.e., all local minima are global minima; and we show for target distributions satisfying certain tail conditions that the unique global minimizer corresponds to the KR map. Given a sample from the target, we then propose an adaptive algorithm that estimates a sparse semi-parametric approximation of the underlying KR map. We demonstrate how this framework can be applied to joint and conditional density estimation, likelihood-free inference, and structure learning of directed graphical models, with stable generalization performance across a range of sample sizes.},
+  html={https://link.springer.com/article/10.1007/s10208-023-09630-x},
+  pdf={https://arxiv.org/pdf/2009.10303},
+  code={https://github.com/baptistar/ATM}
+}
+
+@inproceedings{brennan2022dimension,
+  bibtex_show={true},
+  title={Dimension reduction via score ratio matching},
+  author={Brennan, Michael and Baptista, Ricardo and Marzouk, Youssef},
+  booktitle={NeurIPS 2022 Workshop on Score-Based Methods},
+  year={2022},
+  abstract={We propose a method to detect a low-dimensional subspace where a non-Gaussian target distribution departs from a known reference distribution (e.g., a standard Gaussian). We identify this subspace from gradients of the log-ratio between the target and reference densities, which we call the score ratio. Given only samples from the target distribution, we estimate these gradients via score ratio matching, with a tailored parameterization and a regularization method that expose the low- dimensional structure we seek. We show that our approach outperforms standard score matching for dimension reduction of in-class distributions, and that several benchmark UCI datasets in fact exhibit this type of low dimensionality.},
+  abbr={NeurIPS SBM},
+  html={https://openreview.net/forum?id=YAN97j2NmGT},
+  pdf={https://openreview.net/pdf?id=YAN97j2NmGT}
+}
+
+@inproceedings{wan2023debias,
+  bibtex_show={true},
+  title={Debias Coarsely, Sample Conditionally: Statistical Downscaling through Optimal Transport and Probabilistic Diffusion Models},
+  author={Wan, Zhong Yi and Baptista, Ricardo and Chen, Yi-fan and Anderson, John and Boral, Anudhyan and Sha, Fei and Zepeda-N{\'u}{\~n}ez, Leonardo},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023},
+  abstract={We introduce a two-stage probabilistic framework for statistical downscaling using unpaired data. Statistical downscaling seeks a probabilistic map to transform low- resolution data from a biased coarse-grained numerical scheme to high-resolution data that is consistent with a high-fidelity scheme. Our framework tackles the problem by composing two transformations: (i) a debiasing step via an optimal transport map, and (ii) an upsampling step achieved by a probabilistic diffusion model with a posteriori conditional sampling. This approach characterizes a con- ditional distribution without needing paired data, and faithfully recovers relevant physical statistics from biased samples. We demonstrate the utility of the proposed approach on one- and two-dimensional fluid flow problems, which are representa- tive of the core difficulties present in numerical simulations of weather and climate. Our method produces realistic high-resolution outputs from low-resolution inputs, by upsampling resolutions of 8× and 16×. Moreover, our procedure correctly matches the statistics of physical quantities, even when the low-frequency content of the inputs and outputs do not match, a crucial but difficult-to-satisfy assumption needed by current state-of-the-art alternatives.},
+  abbr={NeurIPS},
+  html={https://arxiv.org/abs/2305.15618},
+  pdf={https://arxiv.org/pdf/2305.15618.pdf},
+  code={https://github.com/google-research/swirl-dynamics/tree/main/swirl_dynamics/projects/probabilistic_diffusion}
+}
+
+@inproceedings{baptista2018bayesian,
+  bibtex_show={true},
+  title={Bayesian optimization of combinatorial structures},
+  author={Baptista, Ricardo and Poloczek, Matthias},
+  booktitle={International Conference on Machine Learning},
+  pages={462--471},
+  year={2018},
+  organization={PMLR},
+  abstract={The optimization of expensive-to-evaluate black-box functions over combinatorial structures is an ubiquitous task in machine learning, engineering and the natural sciences. The combinatorial explosion of the search space and costly evaluations pose challenges for current techniques in discrete optimization and machine learning, and critically require new algorithmic ideas. This article proposes, to the best of our knowledge, the first algorithm to overcome these challenges, based on an adaptive, scalable model that identifies useful combinatorial structure even when data is scarce. Our acquisition function pioneers the use of semidefinite programming to achieve efficiency and scalability. Experimental evaluations demonstrate that this algorithm consistently outperforms other methods from combinatorial and Bayesian optimization.},
+  abbr={ICML},
+  html={https://proceedings.mlr.press/v80/baptista18a.html},
+  pdf={https://arxiv.org/pdf/1806.08838.pdf},
+  code={https://github.com/baptistar/BOCS}
+}
+
+@article{parno2022mpart,
+  bibtex_show={true},
+  title={MParT: Monotone Parameterization Toolkit},
+  author={Parno, Matthew and Rubio, Paul-Baptiste and Sharp, Daniel and Brennan, Michael and Baptista, Ricardo and Bonart, Henning and Marzouk, Youssef},
+  journal={Journal of Open Source Software},
+  volume={7},
+  number={80},
+  pages={4843},
+  year={2022},
+  abbr={JOSS},
+  html={https://joss.theoj.org/papers/10.21105/joss.04843#},
+  pdf={https://joss.theoj.org/papers/10.21105/joss.04843.pdf},
+  code={https://github.com/MeasureTransport/MParT}
+}
+
+@article{morrison2022diagonal,
+  bibtex_show={true},
+  title={Diagonal nonlinear transformations preserve structure in covariance and precision matrices},
+  author={Morrison, Rebecca and Baptista, Ricardo and Basor, Estelle},
+  journal={Journal of Multivariate Analysis},
+  volume={190},
+  pages={104983},
+  year={2022},
+  publisher={Elsevier},
+  abbr={JMA},
+  abstract={For a multivariate normal distribution, the sparsity of the covariance and precision matrices encodes complete information about independence and conditional independence properties. For general distributions, the covariance and precision matrices reveal correlations and so-called partial correlations between variables, but these do not, in general, have any correspondence with respect to independence properties. In this paper, we prove that, for a certain class of non-Gaussian distributions, these correspondences still hold, exactly for the covariance and approximately for the precision. The distributions -- sometimes referred to as ``nonparanormal'' -- are given by diagonal transformations of multivariate normal random variables. We provide several analytic and numerical examples illustrating these results.},
+  html={https://www.sciencedirect.com/science/article/pii/S0047259X22000252},
+  pdf={https://arxiv.org/pdf/2107.04136.pdf}
+}
+
+@inproceedings{alfonso2023generative,
+  bibtex_show={true},
+  title={A generative flow model for conditional sampling via optimal transport},
+  author={Alfonso, Jason and Baptista, Ricardo and Bhakta, Anupam and Gal, Noam and Hou, Alfin and Lyubimova, Isa and Pocklington, Daniel and Sajonz, Josef and Trigila, Giulio and Tsai, Ryan},
+  booktitle={NeurIPS Optimal Transport and Machine Learning Workshop},
+  year={2023},
+  abbr={NeurIPS OTML},
+  abstract={Sampling conditional distributions is a fundamental task for Bayesian inference and density estimation. Generative models characterize conditionals by learning a transport map that pushes forward a reference (e.g., a standard Gaussian) to the target distribution. While these approaches can successfully describe many non- Gaussian problems, their performance is often limited by parametric bias and the reliability of gradient-based (adversarial) optimizers to learn the map. This work proposes a non-parametric generative model that adaptively maps reference samples to the target. The model uses block-triangular transport maps, whose components characterize conditionals of the target distribution. These maps arise from solving an optimal transport problem with a weighted $L^2$ cost function, thereby extending the data-driven approach in Trigila and Tabak for conditional sampling. The proposed approach is demonstrated on a low-dimensional example and a parameter inference problem involving nonlinear ODEs.},
+  html={https://arxiv.org/abs/2307.04102},
+  pdf={https://arxiv.org/pdf/2307.04102.pdf}
+}
+
+@article{baptista2022gradient,
+  bibtex_show={true},
+  title={Gradient-based data and parameter dimension reduction for {B}ayesian models: an information theoretic perspective},
+  author={Baptista, Ricardo and Marzouk, Youssef and Zahm, Olivier},
+  journal={arXiv:2207.08670},
+  year={2022},
+  abbr={arXiv},
+  abstract={We consider the problem of reducing the dimensions of parameters and data in non-Gaussian Bayesian inference problems. Our goal is to identify an "informed" subspace of the parameters and an ``informative'' subspace of the data so that a high-dimensional inference problem can be approximately reformulated in low-to-moderate dimensions, thereby improving the computational efficiency of many inference techniques. To do so, we exploit gradient evaluations of the log-likelihood function. Furthermore, we use an information-theoretic analysis to derive a bound on the posterior error due to parameter and data dimension reduction. This bound relies on logarithmic Sobolev inequalities, and it reveals the appropriate dimensions of the reduced variables. We compare our method with classical dimension reduction techniques, such as principal component analysis and canonical correlation analysis, on applications ranging from mechanics to image processing.},
+  html={https://arxiv.org/abs/2207.08670},
+  pdf={https://arxiv.org/pdf/2207.08670},
+  code={https://github.com/baptistar/BayesianDimRed}
+}
+
+@article{baptista2023approximation,
+  bibtex_show={true},
+  title={An approximation theory framework for measure-transport sampling algorithms},
+  author={Baptista, Ricardo and Hosseini, Bamdad and Kovachki, Nikola B and Marzouk, Youssef M and Sagiv, Amir},
+  journal={arXiv:2302.13965},
+  year={2023},
+  abbr={arXiv},
+  abstract={This article presents a general approximation-theoretic framework to analyze measure transport algorithms for probabilistic modeling. A primary motivating application for such algorithms is sampling -- a central task in statistical inference and generative modeling. We provide a priori error estimates in the continuum limit, i.e., when the measures (or their densities) are given, but when the transport map is discretized or approximated using a finite-dimensional function space. Our analysis relies on the regularity theory of transport maps and on classical approximation theory for high-dimensional functions. A third element of our analysis, which is of independent interest, is the development of new stability estimates that relate the distance between two maps to the distance~(or divergence) between the pushforward measures they define. We present a series of applications of our framework, where quantitative convergence rates are obtained for practical problems using Wasserstein metrics, maximum mean discrepancy, and Kullback--Leibler divergence. Specialized rates for approximations of the popular triangular Kn{ö}the-Rosenblatt maps are obtained, followed by numerical experiments that demonstrate and extend our theory.},
+  html={https://arxiv.org/abs/2302.13965},
+  pdf={https://arxiv.org/pdf/2302.13965},
+  code={https://github.com/baptistar/TransportMapApproximation}
+}
+
+@article{baptista2022bayesian,
+  bibtex_show={true},
+  title={Bayesian model calibration for block copolymer self-assembly: Likelihood-free inference and expected information gain computation via measure transport},
+  author={Baptista, Ricardo and Cao, Lianghao and Chen, Joshua and Ghattas, Omar and Li, Fengyi and Marzouk, Youssef M and Oden, J Tinsley},
+  journal={arXiv:2206.11343},
+  year={2022},
+  abbr={arXiv},
+  abstract={We consider the Bayesian calibration of models describing the phenomenon of block copolymer (BCP) self-assembly using image data produced by microscopy or X-ray scattering techniques. To account for the random long-range disorder in BCP equilibrium structures, we introduce auxiliary variables to represent this aleatory uncertainty. These variables, however, result in an integrated likelihood for high-dimensional image data that is generally intractable to evaluate. We tackle this challenging Bayesian inference problem using a likelihood-free approach based on measure transport together with the construction of summary statistics for the image data. We also show that expected information gains (EIGs) from the observed data about the model parameters can be computed with no significant additional cost. Lastly, we present a numerical case study based on the Ohta--Kawasaki model for diblock copolymer thin film self-assembly and top-down microscopy characterization. For calibration, we introduce several domain-specific energy- and Fourier-based summary statistics, and quantify their informativeness using EIG. We demonstrate the power of the proposed approach to study the effect of data corruptions and experimental designs on the calibration results.},
+  html={https://arxiv.org/abs/2206.11343},
+  pdf={https://arxiv.org/pdf/2206.11343}
+}
+
+@article{ramgraber2022ensemble,
+  bibtex_show={true},
+  title={Ensemble transport smoothing.--{P}art 1: {U}nified framework},
+  author={Ramgraber, Maximilian and Baptista, Ricardo and McLaughlin, Dennis and Marzouk, Youssef},
+  journal = {Journal of Computational Physics: X},
+  volume = {17},
+  pages = {100134},
+  year = {2023},
+  issn = {2590-0552},
+  doi = {https://doi.org/10.1016/j.jcpx.2023.100134},
+  abbr = {JCP},
+  abstract = {Smoothers are algorithms for Bayesian time series re-analysis. Most operational smoothers rely either on affine Kalman-type transformations or on sequential importance sampling. These strategies occupy opposite ends of a spectrum that trades computational efficiency and scalability for statistical generality and consistency: non-Gaussianity renders affine Kalman updates inconsistent with the true Bayesian solution, while the ensemble size required for successful importance sampling can be prohibitive. This paper revisits the smoothing problem from the perspective of measure transport, which offers the prospect of consistent prior-to-posterior transformations for Bayesian inference. We leverage this capacity by proposing a general ensemble framework for transport-based smoothing. Within this framework, we derive a comprehensive set of smoothing recursions based on nonlinear transport maps and detail how they exploit the structure of state-space models in fully non-Gaussian settings. We also describe how many standard Kalman-type smoothing algorithms emerge as special cases of our framework. A companion paper explores the implementation of nonlinear ensemble transport smoothers in greater depth.},
+  html={https://www.sciencedirect.com/science/article/pii/S2590055223000124},
+  pdf={https://arxiv.org/pdf/2210.17000},
+}
+
+@article{ramgraber2022ensemblePart2,
+  bibtex_show={true},
+  title={Ensemble transport smoothing.--{P}art 2: {N}onlinear updates},
+  author = {Maximilian Ramgraber and Ricardo Baptista and Dennis McLaughlin and Youssef Marzouk},
+  journal = {Journal of Computational Physics: X},
+  volume = {17},
+  pages = {100133},
+  year = {2023},
+  issn = {2590-0552},
+  doi = {https://doi.org/10.1016/j.jcpx.2023.100133},
+  abstract = {Smoothing is a specialized form of Bayesian inference for state-space models that characterizes the posterior distribution of a collection of states given an associated sequence of observations. Ramgraber et al. [38] proposes a general framework for transport-based ensemble smoothing, which includes linear Kalman-type smoothers as special cases. Here, we build on this foundation to realize and demonstrate nonlinear backward ensemble transport smoothers. We discuss parameterization and regularization of the associated transport maps, and then examine the performance of these smoothers for nonlinear and chaotic dynamical systems that exhibit non-Gaussian behavior. In these settings, our nonlinear transport smoothers yield lower estimation error than conventional linear smoothers and state-of-the-art iterative ensemble Kalman smoothers, for comparable numbers of model evaluations.},
+  abbr={JCP},
+  html = {https://www.sciencedirect.com/science/article/pii/S2590055223000112},
+  pdf = {https://arxiv.org/pdf/2210.17435.pdf}
+}
+
+@article{leprovost2023,
+  bibtex_show={true},
+  title={An adaptive ensemble filter for heavy-tailed distributions: tuning-free inflation and localization},
+  author={Le Provost, Mathieu and Baptista, Ricardo and Marzouk, Youssef and Eldredge, Jeff D},
+  journal={arXiv:2310.08741},
+  year={2023},
+  abbr={arXiv},
+  abstract={Heavy tails is a common feature of filtering distributions that results from the nonlinear dynamical and observation processes as well as the uncertainty from physical sensors. In these settings, the Kalman filter and its ensemble version — the ensemble Kalman filter (EnKF) — that have been designed under Gaussian assumptions result in degraded performance. t–distributions are a parametric family of distributions whose tail-heaviness is modulated by a degree of freedom $\nu$. Interestingly, Cauchy and Gaussian distributions correspond to the extreme cases of a t–distribution for $\nu = 1$ and $\nu = \infty$, respectively. Leveraging tools from measure transport (Spantini et al., SIAM Review, 2022), we present a generalization of the EnKF whose prior-to-posterior update leads to exact inference for t–distributions. We demonstrate that this filter is less sensitive to outlying synthetic observations generated by the observation model for small $\nu$. Moreover, it recovers the Kalman filter for $\nu = \infty$. For nonlinear state-space models with heavy-tailed noise, we propose an algorithm to estimate the prior-to-posterior update from samples of joint forecast distribution of the states and observations. We rely on a regularized expectation-maximization (EM) algorithm to estimate the mean, scale matrix, and degree of freedom of heavy-tailed t–distributions from limited samples (Finegold and Drton, arXiv preprint, 2014). Leveraging the conditional independence of the joint forecast distribution, we regularize the scale matrix with an l1 sparsity-promoting penalization of the log-likelihood at each iteration of the EM algorithm. This l1 regularization draws upon the graphical lasso algorithm (Friedman et al., Biostatistics, 2008) to estimate sparse covariance matrix in the Gaussian setting. By sequentially estimating the degree of freedom at each analysis step, our filter has the appealing feature of adapting the prior-to-posterior update to the tail-heaviness of the data. This new filter intrinsically embeds an adaptive and data-dependent multiplicative inflation mechanism complemented with an adaptive localization through the l1-penalization of the estimated scale matrix. We demonstrate the benefits of this new ensemble filter on challenging filtering problems with heavy-tailed noise.},
+  html={https://arxiv.org/abs/2310.08741},
+  pdf={https://arxiv.org/pdf/2310.08741}
+}
+
+@article{grange2023computational,
+  bibtex_show={true},
+  title={Computational Optimal Transport and Filtering on {R}iemannian manifolds},
+  author={Grange, Daniel and Al-Jarrah, Mohammad and Baptista, Ricardo and Taghvaei, Amirhossein and Georgiou, Tryphon T and Tannenbaum, Allen},
+  journal={IEEE Control Systems Letters},
+  year={2023},
+  abbr={IEEE CSS},
+  abstract={In this paper we extend recent developments in computational optimal transport to the setting of Riemannian manifolds. In particular, we show how to learn optimal transport maps from samples that relate probability distributions defined on manifolds. Specializing these maps for sampling conditional probability distributions provides an ensemble approach for solving nonlinear filtering problems defined on such geometries. The proposed computational methodology is illustrated with examples of transport and nonlinear filtering on Lie groups, including the circle $S^1$, the special Euclidean group $SE(2)$, and the special orthogonal group $SO(3)$.},
+  html={https://arxiv.org/abs/2309.08847},
+  pdf={https://arxiv.org/pdf/2309.08847}
+}
+
+@inproceedings{chen2023structured,
+  bibtex_show={true},
+  title={Structured Neural Networks for Density Estimation and Causal Inference},
+  author={Chen, Asic Q and Shi, Ruian and Gao, Xiang and Baptista, Ricardo and Krishnan, Rahul G},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023},
+  abbr={NeurIPS},
+  abstract={Injecting structure into neural networks enables learning functions that satisfy invariances with respect to subsets of inputs. For instance, when learning generative models using neural networks, it is advantageous to encode the conditional independence structure of observed variables, often in the form of Bayesian networks. We propose the Structured Neural Network (StrNN), which injects structure through masking pathways in a neural network. The masks are designed via a novel relationship we explore between neural network architectures and binary matrix factorization, to ensure that the desired independencies are respected. We devise and study practical algorithms for this otherwise NP-hard design problem based on novel objectives that control the model architecture. We demonstrate the utility of StrNN in three applications: (1) binary and Gaussian density estimation with StrNN, (2) real-valued density estimation with Structured Autoregressive Flows (StrAFs) and Structured Continuous Normalizing Flows (StrCNF), and (3) interventional and counterfactual analysis with StrAFs for causal inference. Our work opens up new avenues for learning neural networks that enable data-efficient generative modeling and the use of normalizing flows for causal effect estimation.},
+  html={https://arxiv.org/abs/2311.02221},
+  pdf={https://arxiv.org/pdf/2311.02221}
+}
+
+@inproceedings{morrison2017beyond,
+  bibtex_show={true},
+  title={Beyond normality: learning sparse probabilistic graphical models in the non-{G}aussian setting},
+  author={Morrison, Rebecca E and Baptista, Ricardo and Marzouk, Youssef},
+  booktitle={Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  pages={2356--2366},
+  year={2017},
+  abbr={NeurIPS},
+  abstract={We present an algorithm to identify sparse dependence structure in continuous and non-Gaussian probability distributions, given a corresponding set of data. The conditional independence structure of an arbitrary distribution can be represented as an undirected graph (or Markov random field), but most algorithms for learning this structure are restricted to the discrete or Gaussian cases. Our new approach allows for more realistic and accurate descriptions of the distribution in question, and in turn better estimates of its sparse Markov structure. Sparsity in the graph is of interest as it can accelerate inference, improve sampling methods, and reveal important dependencies between variables. The algorithm relies on exploiting the connection between the sparsity of the graph and the sparsity of transport maps, which deterministically couple one probability measure to another.},
+  html={https://arxiv.org/abs/1711.00950},
+  pdf={https://arxiv.org/pdf/1711.00950}
+}
+
+@article{baptista2021learning,
+  bibtex_show={true},
+  title={Learning non-{G}aussian graphical models via {H}essian scores and triangular transport},
+  author={Baptista, Ricardo and Marzouk, Youssef and Morrison, Rebecca E and Zahm, Olivier},
+  journal={arXiv:2101.03093},
+  year={2021},
+  abbr={arXiv},
+  abstract={Undirected probabilistic graphical models represent the conditional dependencies, or Markov properties, of a collection of random variables. Knowing the sparsity of such a graphical model is valuable for modeling multivariate distributions and for efficiently performing inference. While the problem of learning graph structure from data has been studied extensively for certain parametric families of distributions, most existing methods fail to consistently recover the graph structure for non-Gaussian data. Here we propose an algorithm for learning the Markov structure of continuous and non-Gaussian distributions. To characterize conditional independence, we introduce a score based on integrated Hessian information from the joint log-density, and we prove that this score upper bounds the conditional mutual information for a general class of distributions. To compute the score, our algorithm SING estimates the density using a deterministic coupling, induced by a triangular transport map, and iteratively exploits sparse structure in the map to reveal sparsity in the graph. For certain non-Gaussian datasets, we show that our algorithm recovers the graph structure even with a biased approximation to the density. Among other examples, we apply SING to learn the dependencies between the states of a chaotic dynamical system with local interactions.},
+  html={https://arxiv.org/abs/2101.03093},
+  pdf={https://arxiv.org/pdf/2101.03093},
+  code={https://transportmaps.mit.edu}
+}
+
+@article{le2022low,
+  bibtex_show={true},
+  title={A low-rank ensemble Kalman filter for elliptic observations},
+  author={Le Provost, Mathieu and Baptista, Ricardo and Marzouk, Youssef and Eldredge, Jeff D},
+  journal={Proceedings of the Royal Society A},
+  volume={478},
+  number={2266},
+  pages={20220182},
+  year={2022},
+  publisher={The Royal Society},
+  abstract={We propose a regularization method for ensemble Kalman filtering (EnKF) with elliptic observation operators. Commonly used EnKF regularization methods suppress state correlations at long distances. For observations described by elliptic partial differential equations, such as the pressure Poisson equation (PPE) in incompressible fluid flows, distance localization cannot be applied, as we cannot disentangle slowly decaying physical interactions from spurious long-range correlations. This is particularly true for the PPE, in which distant vortex elements couple nonlinearly to induce pressure. Instead, these inverse problems have a low effective dimension: low-dimensional projections of the observations strongly inform a low-dimensional subspace of the state space. We derive a low-rank factorization of the Kalman gain based on the spectrum of the Jacobian of the observation operator. The identified eigenvectors generalize the source and target modes of the multipole expansion, independently of the underlying spatial distribution of the problem. Given rapid spectral decay, inference can be performed in the low-dimensional subspace spanned by the dominant eigenvectors. This low-rank EnKF is assessed on dynamical systems with Poisson observation operators, where we seek to estimate the positions and strengths of point singularities over time from potential or pressure observations. We also comment on the broader applicability of this approach to elliptic inverse problems outside the context of filtering.},
+  abbr={PRSA},
+  html={https://royalsocietypublishing.org/doi/full/10.1098/rspa.2022.0182},
+  pdf={https://arxiv.org/pdf/2203.05120},
+  code={https://github.com/mleprovost/LowRankVortex.jl}
+}
+
+@inproceedings{le2021low,
+  bibtex_show={true},
+  title={A low-rank nonlinear ensemble filter for vortex models of aerodynamic flows},
+  author={Le Provost, Mathieu and Baptista, Ricardo and Marzouk, Youssef and Eldredge, Jeff},
+  booktitle={AIAA Scitech 2021 Forum},
+  pages={1937},
+  year={2021},
+  abstract={Robustly estimating the separated flow about an airfoil is critical in the design of any closed-loop controller. Darakananda et al. (Phys. Rev. Fluids, 2018) successfully used an ensemble Kalman filter (EnKF) to sequentially estimate the flow using an inviscid vortex model and distributed surface pressure readings. To tackle challenging inference problems with limited observations, classical localization schemes suppress correlations at long distances. However, these techniques would be harmful in our case due to the existence of physical long-range interactions between vortices and pressure readings. Instead, these interactions are best described as interactions between clusters of variables. This work proposes a systematic procedure to identify these clusters of variables from a nonlinear observation model. By projecting the states and observations onto these new sets of variables, the inference is performed in a low-dimensional subspace of the state and the observations. To perform consistent inference with the nonlinear model, we use the stochastic map filter (SMF): a natural generalization of the EnKF that relies on interpretable nonlinear prior-to-posterior transformations (Spantini et al., arXiv, 2019). We combine the identification of these clusters of variables with the SMF to derive a low-rank nonlinear ensemble filter. This filter is assessed on the response of a translating plate at 20 degrees that undergoes strong and overlapping pulses applied near the leading-edge. Our framework outperforms the EnKF at estimating the surface pressure distribution along the entire plate, with only two pressure sensors (placed at the edges of the plate) for collecting measurements. Keywords: inviscid vortex model, disturbed separated flow, data assimilation, nonlinear ensemble filter, measure transport, low-rank projections},
+  abbr={AIAA},
+  html={https://arc.aiaa.org/doi/10.2514/6.2021-1937}
+}
+
+@article{lim2023score,
+  bibtex_show={true},
+  title={Score-based diffusion models in function space},
+  author={Lim, Jae Hyun and Kovachki, Nikola B and Baptista, Ricardo and Beckham, Christopher and Azizzadenesheli, Kamyar and Kossaifi, Jean and Voleti, Vikram and Song, Jiaming and Kreis, Karsten and Kautz, Jan and others},
+  journal={arXiv:2302.07400},
+  year={2023},
+  abstract={Diffusion models have recently emerged as a powerful framework for generative modeling. They consist of a forward process that perturbs input data with Gaussian white noise and a reverse process that learns a score function to generate samples by denoising. Despite their tremendous success, they are mostly formulated on finite-dimensional spaces, e.g. Euclidean, limiting their applications to many domains where the data has a functional form such as in scientific computing and 3D geometric data analysis. In this work, we introduce a mathematically rigorous framework called Denoising Diffusion Operators (DDOs) for training diffusion models in function space. In DDOs, the forward process perturbs input functions gradually using a Gaussian process. The generative process is formulated by integrating a function-valued Langevin dynamic. Our approach requires an appropriate notion of the score for the perturbed data distribution, which we obtain by generalizing denoising score matching to function spaces that can be infinite-dimensional. We show that the corresponding discretized algorithm generates accurate samples at a fixed cost that is independent of the data resolution. We theoretically and numerically verify the applicability of our approach on a set of problems, including generating solutions to the Navier-Stokes equation viewed as the push-forward distribution of forcings from a Gaussian Random Field (GRF).},
+  abbr={arXiv},
+  html={https://arxiv.org/abs/2302.07400},
+  pdf={https://arxiv.org/pdf/2302.07400.pdf}
+}
+
+@article{kovachki2020conditional,
+  bibtex_show={true},
+  title={Conditional Sampling with Monotone {GAN}s: from Generative Models to Likelihood-Free Inference},
+  author={Baptista, Ricardo and Hosseini, Bamdad and Kovachki, Nikola B and Marzouk, Youssef},
+  journal={arXiv:2006.06755},
+  year={2023},
+  selected={true},
+  abbr={arXiv},
+  abstract={We present a novel framework for conditional sampling of probability measures, using block triangular transport maps. We develop the theoretical foundations of block triangular transport in a Banach space setting, establishing general conditions under which conditional sampling can be achieved and drawing connections between monotone block triangular maps and optimal transport. Based on this theory, we then introduce a computational approach, called monotone generative adversarial networks (M-GANs), to learn suitable block triangular maps. Our algorithm uses only samples from the underlying joint probability measure and is hence likelihood-free. Numerical experiments with M-GAN demonstrate accurate sampling of conditional measures in synthetic examples, Bayesian inverse problems involving ordinary and partial differential equations, and probabilistic image in-painting.},
+  html={https://arxiv.org/abs/2006.06755},
+  pdf={https://arxiv.org/pdf/2006.06755},
+  code={https://github.com/baptistar/MGAN}
+}
+
+@article{baptista2019some,
+  bibtex_show={true},
+  title={Some greedy algorithms for sparse polynomial chaos expansions},
+  author={Baptista, Ricardo and Stolbunov, Valentin and Nair, Prasanth B},
+  journal={Journal of Computational Physics},
+  volume={387},
+  pages={303--325},
+  year={2019},
+  publisher={Elsevier},
+  abbr={JCP},
+  abstract={Compressed sensing algorithms approximate functions using limited evaluations by searching for a sparse representation among a dictionary of basis functions. Orthogonal matching pursuit (OMP) is a greedy algorithm for selecting basis functions whose computational cost scales with the size of the dictionary. For polynomial chaos (PC) approximations, the size of the dictionary grows quickly with the number of model inputs and the maximum polynomial degree, making them often prohibitive to use with greedy methods. We propose two new algorithms for efficiently constructing sparse PC expansions for problems with high-dimensional inputs. The first algorithm is a parallel OMP method coupled with an incremental QR factorization scheme, wherein the model construction step is interleaved with a ν-fold cross-validation procedure. The second approach is a randomized greedy algorithm that leverages a probabilistic argument to only evaluate a subset of basis functions from the dictionary at each iteration of the incremental algorithm. The randomized algorithm is demonstrated to recover model outputs with a similar level of sparsity and accuracy as OMP, but with a cost that is independent of the dictionary size. Both algorithms are validated with a numerical comparison of their performance on a series of algebraic test problems and PDEs with high-dimensional inputs.},
+  html={https://www.sciencedirect.com/science/article/pii/S0021999119300865},
+  code={https://github.com/baptistar/greedyPC},
+}
+
+@inproceedings{izzatullah2020bayesian,
+  bibtex_show={true},
+  title={Bayesian seismic inversion: Measuring Langevin MCMC sample quality with kernels},
+  author={Izzatullah, Muhammad and Baptista, Ricardo and Mackey, Lester and Marzouk, Youssef and Peter, Daniel},
+  booktitle={SEG International Exposition and Annual Meeting},
+  pages={D031S034R003},
+  year={2020},
+  organization={SEG},
+  abbr={SEG},
+  abstract={The Bayesian framework is commonly used to quantify uncertainty in seismic inversion. To perform Bayesian inference, Markov chain Monte Carlo (MCMC) algorithms are regarded as the gold standard technique for sampling from the posterior probability distribution. Consistent MCMC methods have trouble for complex, high-dimensional models, and most methods scale poorly to large datasets, such as those arising in seismic inversion. As an alternative, approximate MCMC methods based on unadjusted Langevin dynamics offer scalability and more rapid sampling at the cost of biased inference. However, when assessing the quality of approximate MCMC samples for characterizing the posterior distribution, most diagnostics fail to account for these biases. In this work, we introduce the kernel Stein discrepancy (KSD) as a diagnostic tool to determine the convergence of MCMC samples for Bayesian seismic inversion. We demonstrate the use of the KSD for measuring sample quality and selecting the optimal Langevin MCMC algorithm for two Gaussian Bayesian inference problems.},
+  html={https://onepetro.org/SEGAM/proceedings-abstract/SEG20/3-SEG20/D031S034R003/462172},
+  pdf={https://www.researchgate.net/profile/Muhammad-Izzatullah-2/publication/342361655_Bayesian_seismic_inversion_Measuring_Langevin_MCMC_sample_quality_with_kernels/links/5ef0d022a6fdcc73be94591d/Bayesian-seismic-inversion-Measuring-Langevin-MCMC-sample-quality-with-kernels.pdf}
+}
+
+@article{baptista2018optimal,
+  bibtex_show={true},
+  title={Optimal approximations of coupling in multidisciplinary models},
+  author={Baptista, Ricardo and Marzouk, Youssef and Willcox, Karen and Peherstorfer, Benjamin},
+  journal={AIAA Journal},
+  volume={56},
   number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+  pages={2412--2428},
+  year={2018},
+  publisher={American Institute of Aeronautics and Astronautics},
+  abbr={AIAA},
+  abstract={This paper presents a methodology for identifying important discipline couplings in multicomponent engineering systems. Coupling among disciplines contributes significantly to the computational cost of analyzing a system and can become particularly burdensome when coupled analyses are embedded within a design or optimization loop. In many cases, disciplines may be weakly coupled, so that some of the coupling or interaction terms can be neglected without significantly impacting the accuracy of the system output. Typical practice derives such approximations in an ad hoc manner using expert opinion and domain experience. This work proposes a new approach that formulates an optimization problem to find a model that optimally balances accuracy of the model outputs with the sparsity of the discipline couplings. An adaptive sequential Monte Carlo sampling-based technique is used to efficiently search the combinatorial model space of different discipline couplings. An algorithm for selecting an optimal model is presented and illustrated in a fire-detection satellite model and a turbine engine cycle analysis model.},
+  html={https://arc.aiaa.org/doi/full/10.2514/1.J056888},
+  code={https://github.com/baptistar/coupling}
 }
