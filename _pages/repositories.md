@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+title: Code
+description: 
 nav: true
 nav_order: 3
 ---
 
-1. AATM (Matlab): Adaptive algorithm for learning structured transport maps from samples
+1. ATM (Matlab): Adaptive algorithm for learning structured transport maps from samples
 2. StochasticMaps (Matlab): Sequential Bayesian inference for non-Gaussian dynamical systems 
 3. TransportMaps (Python): Learning parametric transformations between probability distributions 
 4. GreedyPC (Matlab): Greedy algorithm for constructing sparse polynomial approximations
