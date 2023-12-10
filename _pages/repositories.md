@@ -7,13 +7,14 @@ nav: true
 nav_order: 4
 ---
 
-1. ATM (Matlab): Adaptive algorithm for learning structured transport maps from samples
+<!-- 1. ATM (Matlab): Adaptive algorithm for learning structured transport maps from samples
 2. StochasticMaps (Matlab): Sequential Bayesian inference for non-Gaussian dynamical systems 
 3. TransportMaps (Python): Learning parametric transformations between probability distributions 
 4. GreedyPC (Matlab): Greedy algorithm for constructing sparse polynomial approximations
 5. BOCS (Python/Matlab): Bayesian optimization for solving black-box combinatorial problems
+ -->
 
-## GitHub Repositories
+## Personal Github repositories
 
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
@@ -22,3 +23,10 @@ nav_order: 4
   {% endfor %}
 </div>
 {% endif %}
+
+## Collaborative software projects
+
+I have had the opportunity to contribute to software package that learn transport maps for generative modeling, density estimation, and representing probabilistic graphical models
+
+[TransportMaps](https://transportmaps.mit.edu)
+[Monotone Parameterization Toolkit](https://measuretransport.github.io/MParT/)
