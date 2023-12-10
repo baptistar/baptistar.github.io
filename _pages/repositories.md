@@ -22,8 +22,8 @@ Personal Github repositories for some research projects:
   {% endfor %}
 </div>
 {% endif %}
-\
 
+<br />
 
 ## Collaborative projects
 
