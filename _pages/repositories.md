@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Code
-description: Personal Github repositories for various research projects.
+description: 
 nav: true
 nav_order: 4
 ---
@@ -13,6 +13,7 @@ nav_order: 4
 4. GreedyPC (Matlab): Greedy algorithm for constructing sparse polynomial approximations
 5. BOCS (Python/Matlab): Bayesian optimization for solving black-box combinatorial problems
  -->
+Personal Github repositories for various research projects:
 
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
@@ -23,11 +24,11 @@ nav_order: 4
 {% endif %}
 
 \
-\
+
 
 ## Collaborative projects
 
 I have had the opportunity to contribute to software packages that learn transport maps for generative modeling, solving inference problems, and representing probabilistic graphical models:
 
-[**TransportMaps**](https://transportmaps.mit.edu)\
-[**Monotone Parameterization Toolkit**](https://measuretransport.github.io/MParT/)
+**[TransportMaps](https://transportmaps.mit.edu)**\
+**[Monotone Parameterization Toolkit**](https://measuretransport.github.io/MParT/)**
