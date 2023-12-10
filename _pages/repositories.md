@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: Code
-description: Personal Github repositories for research projects
+description: Personal Github repositories for various research projects.
 nav: true
 nav_order: 4
 ---
@@ -22,11 +22,12 @@ nav_order: 4
 </div>
 {% endif %}
 
+\n\n
 
 ## Collaborative projects
 
 I have had the opportunity to contribute to software packages that learn transport maps for generative modeling, solving inference problems, and representing probabilistic graphical models:
 
-[*TransportMaps*](https://transportmaps.mit.edu)
+*[TransportMaps*](https://transportmaps.mit.edu)*
 
-[*Monotone Parameterization Toolkit*](https://measuretransport.github.io/MParT/)
+*[Monotone Parameterization Toolkit](https://measuretransport.github.io/MParT/)*
