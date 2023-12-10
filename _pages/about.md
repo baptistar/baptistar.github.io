@@ -1,26 +1,27 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: von K&#225rm&#225n Instructor, <a href='http://www.caltech.edu'>California Institute of Technology</a>
 
 profile:
   align: right
   image: avatar.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info: > # <p>Pasadena, CA \\ rsb (at) caltech (dot) edu </p>
 
 news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an instructor in [Computing + Mathematical Sciences](http://cms.caltech.edu) at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for complex problems in science and engineering. Most recently, I have been developing mathematically rigorous and scalable generative models based on computational measure transport. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I completed my PhD in the Center for Computational Science and Engineering at MIT where I was fortunate to be advised by [Youssef Marzouk](http://uqgroup.mit.edu). A copy of my PhD thesis can be found [here](https://dspace.mit.edu/handle/1721.1/145049). Before MIT, I received my BASc in [Engineering Science](http://engsci.utoronto.ca) from the University of Toronto.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**Contact**:  rsb (at) caltech (dot) edu\\
+**Follow**: <a href="https://scholar.google.com/citations?user=rdYO0XYAAAAJ&hl=en" title="Google Scholar"><i class="    ai ai-google-scholar"></i> Google Scholar </a>&emsp;
+<a href="https://arxiv.org/a/baptista_r_1.html" title="arXiv"><i class="    ai ai-arxiv"></i> arXiv </a>&emsp;
+<a href="https://github.com/baptistar" title="GitHub"><i class="fab fa-github"></i> GitHub </a>&emsp;
+<a href="https://www.linkedin.com/in/ricardo-baptista-471a9957/" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn </a>
