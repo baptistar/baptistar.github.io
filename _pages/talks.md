@@ -20,6 +20,6 @@ nav_order: 3
 - SIAM Uncertainty Quantification, April 2022, Atlanta, Georgia
 
 #### High-dimensional sequential inference via measure transport
-- Caltech SIAM CMX Seminar, Pasadena, CA, November 2022
+- Caltech SIAM CMX Seminar, November 2022, Pasadena, CA
 - Vector Institute, August 2022, Toronto, Canada
 - The University of Chicago CCAM Colloquium, May 2021, Online
