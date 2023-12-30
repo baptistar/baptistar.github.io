@@ -8,6 +8,7 @@ nav_order: 3
 ---
 
 #### Conditional sampling with block-triangular maps
+- IMS Conference on Statistics and Data Science, December 2023, Lisbon, Portugal
 - International Congress on Industrial and Applied Mathematics, August 2023, Tokyo, Japan
 
 #### Gradient-based dimension reduction for Bayesian inference
