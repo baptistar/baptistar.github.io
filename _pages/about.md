@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am an instructor in [Computing + Mathematical Sciences](http://cms.caltech.edu) at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing mathematically rigorous and scalable generative models based on computational measure transport. 
+I am an instructor in [Computing + Mathematical Sciences](http://cms.caltech.edu) at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing scalable generative models for solving inverse problems based on computational measure transport. 
 
 I completed my PhD in the Center for Computational Science and Engineering at MIT where I was fortunate to be advised by [Youssef Marzouk](http://uqgroup.mit.edu). A copy of my PhD thesis can be found [here](https://dspace.mit.edu/handle/1721.1/145049). Before MIT, I received my BASc in [Engineering Science](http://engsci.utoronto.ca) from the University of Toronto.
 
