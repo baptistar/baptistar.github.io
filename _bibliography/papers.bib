@@ -19,13 +19,25 @@
   code={https://github.com/map-filters/stochasticMaps}
 }
 
+@inproceedings{luk2024learning,
+  bibtex_show={true},
+  title={Learning Optimal Filters Using Variational Inference},
+  author={Luk, Enoch and Bach, Eviatar and Baptista, Ricardo and Stuart, Andrew},
+  booktitle={ICML Machine Learning for Earth System Modeling Workshop},
+  year={2024},
+  abstract={Filtering-the task of estimating the conditional distribution of states of a dynamical system given partial, noisy, observations-is important in many areas of science and engineering, including weather and climate prediction. However, the filtering distribution is generally intractable to obtain for high-dimensional, nonlinear systems. Filters used in practice, such as the ensemble Kalman filter (EnKF), are biased for nonlinear systems and have numerous tuning parameters. Here, we present a framework for learning a parameterized analysis map-the map that takes a forecast distribution and observations to the filtering distribution-using variational inference. We show that this methodology can be used to learn gain matrices for filtering linear and nonlinear dynamical systems, as well as inflation and localization parameters for an EnKF. Future work will apply this framework to learn new filtering algorithms.},
+  abbr={ICML ESM},
+  html={https://arxiv.org/abs/2406.18066},
+  pdf={https://arxiv.org/pdf/2406.18066},
+}
+
 @article{wang2023efficient,
   bibtex_show={true},
   title={Efficient Neural Network Approaches for Conditional Optimal Transport with Applications in Bayesian Inference},
   author={Wang, Zheyu Oliver and Baptista, Ricardo and Marzouk, Youssef and Ruthotto, Lars and Verma, Deepanshu},
   journal={arXiv:2310.16975},
   year={2023},
-  abstract={We present two neural network approaches that approximate the solutions of static and dynamic conditional optimal transport (COT) problems, respectively. Both approaches enable sampling and density estimation of conditional probability distributions, which are core tasks in Bayesian inference. Our methods represent the target conditional distributions as transformations of a tractable reference distribution and, therefore, fall into the framework of measure transport. COT maps are a canonical choice within this framework, with desirable properties such as uniqueness and monotonicity. However, the associated COT problems are computationally challenging, even in moderate dimensions. To improve the scalability, our numerical algorithms leverage neural networks to parameterize COT maps. Our methods exploit the structure of the static and dynamic formulations of the COT problem. PCP-Map models conditional transport maps as the gradient of a partially input convex neural network (PICNN) and uses a novel numerical implementation to increase computational efficiency compared to state-of-the-art alternatives. COT-Flow models conditional transports via the flow of a regularized neural ODE; it is slower to train but offers faster sampling. We demonstrate their effectiveness and efficiency by comparing them with state-of-the-art approaches using benchmark datasets and Bayesian inverse problems.},
+  abstract={We present two neural network approaches that approximate the solutions of static and dynamic conditional optimal transport (COT) problems. Both approaches enable conditional sampling and conditional density estimation, which are core tasks in Bayesian inference–particularly in the simulation-based ("likelihood-free") setting. Our methods represent the target conditional distributions as transformations of a tractable reference distribution and, therefore, fall into the framework of measure transport. Although many measure transport approaches model the transformation as COT maps, obtaining the map is computationally challenging, even in moderate dimensions. To improve scalability, our numerical algorithms use neural networks to parameterize COT maps and further exploit the structure of the COT problem. Our static approach approximates the map as the gradient of a partially input-convex neural network. It uses a novel numerical implementation to increase computational efficiency compared to state-of-the-art alternatives. Our dynamic approach approximates the conditional optimal transport via the flow map of a regularized neural ODE; compared to the static approach, it is slower to train but offers more modeling choices and can lead to faster sampling. We demonstrate both algorithms numerically, comparing them with competing state-of-the-art approaches, using benchmark datasets and simulation-based Bayesian inverse problems.},
   abbr={arXiv},
   html={https://arxiv.org/abs/2310.16975},
   pdf={https://arxiv.org/pdf/2310.16975},
@@ -351,16 +363,32 @@
   pdf={https://arxiv.org/pdf/2302.07400.pdf}
 }
 
+@article{chen2024coupled,
+  bibtex_show={true},
+  title={Coupled Input-Output Dimension Reduction: Application to Goal-oriented Bayesian Experimental Design and Global Sensitivity Analysis},
+  author={Chen, Qiao and Arnaud, Elise and Baptista, Ricardo and Zahm, Olivier},
+  journal={arXiv:2406.13425},
+  year={2024},
+  abstract={We introduce a new method to jointly reduce the dimension of the input and output space of a high-dimensional function. Choosing a reduced input subspace influences which output subspace is relevant and vice versa. Conventional methods focus on reducing either the input or output space, even though both are often reduced simultaneously in practice. Our coupled approach naturally supports goal-oriented dimension reduction, where either an input or output quantity of interest is prescribed. We consider, in particular, goal-oriented sensor placement and goal-oriented sensitivity analysis, which can be viewed as dimension reduction where the most important output or, respectively, input components are chosen. Both applications present difficult combinatorial optimization problems with expensive objectives such as the expected information gain and Sobol indices. By optimizing gradient-based bounds, we can determine the most informative sensors and most sensitive parameters as the largest diagonal entries of some diagnostic matrices, thus bypassing the combinatorial optimization and objective evaluation.},
+  abbr={arXiv},
+  html={https://arxiv.org/abs/2406.13425},
+  pdf={https://arxiv.org/pdf/2406.13425.pdf}
+}
+
 @article{kovachki2020conditional,
   bibtex_show={true},
   title={Conditional Sampling with Monotone {GAN}s: from Generative Models to Likelihood-Free Inference},
   author={Baptista, Ricardo and Hosseini, Bamdad and Kovachki, Nikola B and Marzouk, Youssef},
-  journal={arXiv:2006.06755},
-  year={2023},
   selected={true},
-  abbr={arXiv},
+  abbr={JUQ},
+  journal = {SIAM/ASA Journal on Uncertainty Quantification},
+  volume = {12},
+  number = {3},
+  pages = {868-900},
+  year = {2024},
+  doi = {10.1137/23M1581546},
   abstract={We present a novel framework for conditional sampling of probability measures, using block triangular transport maps. We develop the theoretical foundations of block triangular transport in a Banach space setting, establishing general conditions under which conditional sampling can be achieved and drawing connections between monotone block triangular maps and optimal transport. Based on this theory, we then introduce a computational approach, called monotone generative adversarial networks (M-GANs), to learn suitable block triangular maps. Our algorithm uses only samples from the underlying joint probability measure and is hence likelihood-free. Numerical experiments with M-GAN demonstrate accurate sampling of conditional measures in synthetic examples, Bayesian inverse problems involving ordinary and partial differential equations, and probabilistic image in-painting.},
-  html={https://arxiv.org/abs/2006.06755},
+  html={https://epubs.siam.org/doi/10.1137/23M1581546},
   pdf={https://arxiv.org/pdf/2006.06755},
   code={https://github.com/baptistar/MGAN}
 }
