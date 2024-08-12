@@ -47,6 +47,25 @@
   code={https://github.com/baptistar/ATM}
 }
 
+@article{bourdais2023computational,
+  bibtex_show={true},
+  author = {Théo Bourdais and Pau Batlle  and Xianjin Yang  and Ricardo Baptista  and Nicolas Rouquette  and Houman Owhadi },
+  title = {Codiscovering graphical structure and functional relationships within data: A Gaussian Process framework for connecting the dots},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {121},
+  number = {32},
+  pages = {e2403449121},
+  year = {2024},
+  doi = {10.1073/pnas.2403449121},
+  URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2403449121},
+  eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2403449121},
+  abstract = {Many complex data analysis problems within and beyond the scientific domain involve discovering graphical structures and functional relationships within data. Nonlinear variance decomposition with Gaussian Processes simplifies and automates this process. Other methods, such as artificial neural networks, lack this variance decomposition feature. Information-theoretic and causal inference methods suffer from super-exponential complexity with respect to the number of variables. The proposed technique performs this task in polynomial complexity. This unlocks the potential for applications involving the identification of a network of hidden relationships between variables without a parameterized model at a remarkable scale, scope, and complexity. Most problems within and beyond the scientific domain can be framed into one of the following three levels of complexity of function approximation. Type 1: Approximate an unknown function given input/output data. Type 2: Consider a collection of variables and functions, some of which are unknown, indexed by the nodes and hyperedges of a hypergraph (a generalized graph where edges can connect more than two vertices). Given partial observations of the variables of the hypergraph (satisfying the functional dependencies imposed by its structure), approximate all the unobserved variables and unknown functions. Type 3: Expanding on Type 2, if the hypergraph structure itself is unknown, use partial observations of the variables of the hypergraph to discover its structure and approximate its unknown functions. These hypergraphs offer a natural platform for organizing, communicating, and processing computational knowledge. While most scientific problems can be framed as the data-driven discovery of unknown functions in a computational hypergraph whose structure is known (Type 2), many require the data-driven discovery of the structure (connectivity) of the hypergraph itself (Type 3). We introduce an interpretable Gaussian Process (GP) framework for such (Type 3) problems that does not require randomization of the data, access to or control over its sampling, or sparsity of the unknown functions in a known or learned basis. Its polynomial complexity, which contrasts sharply with the super-exponential complexity of causal inference methods, is enabled by the nonlinear ANOVA capabilities of GPs used as a sensing mechanism.},
+  abbr={PNAS},
+  html={https://www.pnas.org/doi/10.1073/pnas.2403449121},
+  pdf={https://arxiv.org/pdf/2311.17007},
+  code={https://github.com/TheoBourdais/ComputationalHypergraphDiscovery}
+}
+
 @inproceedings{brennan2022dimension,
   bibtex_show={true},
   title={Dimension reduction via score ratio matching},
@@ -159,11 +178,14 @@
   bibtex_show={true},
   title={Bayesian model calibration for block copolymer self-assembly: Likelihood-free inference and expected information gain computation via measure transport},
   author={Baptista, Ricardo and Cao, Lianghao and Chen, Joshua and Ghattas, Omar and Li, Fengyi and Marzouk, Youssef M and Oden, J Tinsley},
-  journal={arXiv:2206.11343},
-  year={2022},
-  abbr={arXiv},
+  journal={Journal of Computational Physics},
+  volume={503},
+  pages={112844},
+  year={2024},
+  publisher={Elsevier},
+  abbr={JCP},
   abstract={We consider the Bayesian calibration of models describing the phenomenon of block copolymer (BCP) self-assembly using image data produced by microscopy or X-ray scattering techniques. To account for the random long-range disorder in BCP equilibrium structures, we introduce auxiliary variables to represent this aleatory uncertainty. These variables, however, result in an integrated likelihood for high-dimensional image data that is generally intractable to evaluate. We tackle this challenging Bayesian inference problem using a likelihood-free approach based on measure transport together with the construction of summary statistics for the image data. We also show that expected information gains (EIGs) from the observed data about the model parameters can be computed with no significant additional cost. Lastly, we present a numerical case study based on the Ohta--Kawasaki model for diblock copolymer thin film self-assembly and top-down microscopy characterization. For calibration, we introduce several domain-specific energy- and Fourier-based summary statistics, and quantify their informativeness using EIG. We demonstrate the power of the proposed approach to study the effect of data corruptions and experimental designs on the calibration results.},
-  html={https://arxiv.org/abs/2206.11343},
+  html={https://www.sciencedirect.com/science/article/pii/S0021999124000937},
   pdf={https://arxiv.org/pdf/2206.11343}
 }
 
@@ -248,16 +270,43 @@
   pdf={https://arxiv.org/pdf/1711.00950}
 }
 
+@article{feng2024neural,
+  bibtex_show={true},
+  title={Neural Approximate Mirror Maps for Constrained Diffusion Models},
+  author={Feng, Berthy T and Baptista, Ricardo and Bouman, Katherine L},
+  journal={arXiv:2406.12816},
+  year={2024},
+  abbr={arXiv},
+  abstract={Diffusion models excel at creating visually-convincing images, but they often struggle to meet subtle constraints inherent in the training data. Such constraints could be physics-based (e.g., satisfying a PDE), geometric (e.g., respecting symmetry), or semantic (e.g., including a particular number of objects). When the training data all satisfy a certain constraint, enforcing this constraint on a diffusion model not only improves its distribution-matching accuracy but also makes it more reliable for generating valid synthetic data and solving constrained inverse problems. However, existing methods for constrained diffusion models are inflexible with different types of constraints. Recent work proposed to learn mirror diffusion models (MDMs) in an unconstrained space defined by a mirror map and to impose the constraint with an inverse mirror map, but analytical mirror maps are challenging to derive for complex constraints. We propose neural approximate mirror maps (NAMMs) for general constraints. Our approach only requires a differentiable distance function from the constraint set. We learn an approximate mirror map that pushes data into an unconstrained space and a corresponding approximate inverse that maps data back to the constraint set. A generative model, such as an MDM, can then be trained in the learned mirror space and its samples restored to the constraint set by the inverse map. We validate our approach on a variety of constraints, showing that compared to an unconstrained diffusion model, a NAMM-based MDM substantially improves constraint satisfaction. We also demonstrate how existing diffusion-based inverse-problem solvers can be easily applied in the learned mirror space to solve constrained inverse problems.},
+  html={https://arxiv.org/abs/2406.12816},
+  pdf={https://arxiv.org/pdf/2406.12816}
+}
+
+@article{baptista2024trim,
+  bibtex_show={true},
+  title={TrIM: Transformed Iterative Mondrian Forests for Gradient-based Dimension Reduction and High-Dimensional Regression},
+  author={Baptista, Ricardo and O'Reilly, Eliza and Xie, Yangxinyu},
+  journal={arXiv:2407.09964},
+  year={2024},
+  abbr={arXiv},
+  abstract={We propose a computationally efficient algorithm for gradient-based linear dimension reduction and high-dimensional regression. The algorithm initially computes a Mondrian forest and uses this estimator to identify a relevant feature subspace of the inputs from an estimate of the expected gradient outer product (EGOP) of the regression function. In addition, we introduce an iterative approach known as Transformed Iterative Mondrian (TrIM) forest to improve the Mondrian forest estimator by using the EGOP estimate to update the set of features and weights used by the Mondrian partitioning mechanism. We obtain consistency guarantees and convergence rates for the estimation of the EGOP matrix and the random forest estimator obtained from one iteration of the TrIM algorithm. Lastly, we demonstrate the effectiveness of our proposed algorithm for learning the relevant feature subspace across a variety of settings with both simulated and real data.},
+  html={https://arxiv.org/abs/2407.09964},
+  pdf={https://arxiv.org/pdf/2407.09964}
+}
+
 @article{baptista2021learning,
   bibtex_show={true},
   title={Learning non-{G}aussian graphical models via {H}essian scores and triangular transport},
   author={Baptista, Ricardo and Marzouk, Youssef and Morrison, Rebecca E and Zahm, Olivier},
-  journal={arXiv:2101.03093},
-  year={2021},
-  abbr={arXiv},
+  journal={Journal of Machine Learning Research},
+  volume={25},
+  number={85},
+  pages={1--46},
+  year={2024},
+  abbr={JMLR},
   abstract={Undirected probabilistic graphical models represent the conditional dependencies, or Markov properties, of a collection of random variables. Knowing the sparsity of such a graphical model is valuable for modeling multivariate distributions and for efficiently performing inference. While the problem of learning graph structure from data has been studied extensively for certain parametric families of distributions, most existing methods fail to consistently recover the graph structure for non-Gaussian data. Here we propose an algorithm for learning the Markov structure of continuous and non-Gaussian distributions. To characterize conditional independence, we introduce a score based on integrated Hessian information from the joint log-density, and we prove that this score upper bounds the conditional mutual information for a general class of distributions. To compute the score, our algorithm SING estimates the density using a deterministic coupling, induced by a triangular transport map, and iteratively exploits sparse structure in the map to reveal sparsity in the graph. For certain non-Gaussian datasets, we show that our algorithm recovers the graph structure even with a biased approximation to the density. Among other examples, we apply SING to learn the dependencies between the states of a chaotic dynamical system with local interactions.},
-  html={https://arxiv.org/abs/2101.03093},
-  pdf={https://arxiv.org/pdf/2101.03093},
+  html={https://www.jmlr.org/papers/v25/21-0022.html},
+  pdf={https://www.jmlr.org/papers/volume25/21-0022/21-0022.pdf},
   code={https://transportmaps.mit.edu}
 }
 
