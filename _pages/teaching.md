@@ -9,7 +9,7 @@ nav_order: 2
 
 #### Caltech
 - **ACM154 - Inverse Problems and Data Assimilation**, co-instructor in Winter 2024
-- **ACM11 - Introduction to Computational Science and Engineering**, instructor in Spring 2023
+- **ACM11 - Introduction to Computational Science and Engineering**, instructor in Spring 2023, 2024
 - **ACM256 - Foundations of measure transport: theory and computation**, co-instructor and course developer in Winter 2023
 
 #### MIT
@@ -18,4 +18,4 @@ nav_order: 2
 
 #### Other teaching activities
 - **Machine Learning, Modeling, and Simulation Principles,** course developer for MIT xPRO
-- **Introduction to generative modeling**, instructor and course developer  for the African Institute of Mathematical Sciences at the Spring 2023 Data Science Training School in Kigali, Rwanda
+- **Introduction to generative modeling**, instructor and course developer  for the African Institute of Mathematical Sciences at the Spring 2023 & 2024 Data Science Training School in Kigali, Rwanda

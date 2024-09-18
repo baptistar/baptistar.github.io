@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: von K&#225rm&#225n Instructor, <a href='http://www.caltech.edu'>California Institute of Technology</a>
+subtitle: Postdoctoral Scientist, Amazon Search #von K&#225rm&#225n Instructor, <a href='http://www.caltech.edu'>California Institute of Technology</a>
 
 profile:
   align: right
@@ -16,9 +16,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am an instructor in [Computing + Mathematical Sciences](http://cms.caltech.edu) at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing scalable generative models for solving inverse problems based on computational measure transport. 
+I am a Postdoctoral Scientist at [Amazon Search](https://www.amazon.science) and a Visitor at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing scalable generative models based on computational measure transport.
 
-I completed my PhD in the Center for Computational Science and Engineering at MIT where I was fortunate to be advised by [Youssef Marzouk](http://uqgroup.mit.edu). A copy of my PhD thesis can be found [here](https://dspace.mit.edu/handle/1721.1/145049). Before MIT, I received my BASc in [Engineering Science](http://engsci.utoronto.ca) from the University of Toronto.
+Bio: From 2022-2024 I was a von K&#225rm&#225n instructor at Caltech in [Computing + Mathematical Sciences](http://cms.caltech.edu). I completed my PhD in the Center for Computational Science and Engineering at MIT where I was fortunate to be advised by [Youssef Marzouk](http://uqgroup.mit.edu). A copy of my PhD thesis can be found [here](https://dspace.mit.edu/handle/1721.1/145049). Before MIT, I received my BASc in [Engineering Science](http://engsci.utoronto.ca) from the University of Toronto.
 
 **Contact**:  rsb (at) caltech (dot) edu\\
 **Follow**: <a href="https://scholar.google.com/citations?user=rdYO0XYAAAAJ&hl=en" title="Google Scholar"><i class="    ai ai-google-scholar"></i> Google Scholar </a>&emsp;
