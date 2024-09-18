@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a joint keynote talk at the CIRM-Marseille Digital Twins for Inverse Problems Workshop on Bayesian inference via dimension reduction. Thank you to all of the organizers!
+Gave a joint keynote talk at the [CIRM-Marseille](https://conferences.cirm-math.fr/3264.html) Digital Twins for Inverse Problems Workshop on Bayesian inference via dimension reduction. Thank you to all of the organizers!
