@@ -16,7 +16,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I am a Postdoctoral Scientist at [Amazon Search](https://www.amazon.science) and a Visitor at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing scalable generative models based on computational measure transport.
+I am a Postdoctoral Scientist at [Amazon Search](https://www.amazon.science) and a Visitor at Caltech hosted by [Andrew Stuart](http://stuart.caltech.edu) and [Houman Owhadi](http://users.cms.caltech.edu/~owhadi/index.htm). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing and analyzing generative models based on computational measure transport.
+
+In Fall 2025, I am excited to join the University of Toronto as an Assistant Professor in [Statistical Sciences](https://www.statistics.utoronto.ca) and Faculty Affiliate at the [Vector Institute](https://vectorinstitute.ai/)!
 
 Bio: From 2022-2024 I was a von K&#225rm&#225n instructor at Caltech in [Computing + Mathematical Sciences](http://cms.caltech.edu). I completed my PhD in the Center for Computational Science and Engineering at MIT where I was fortunate to be advised by [Youssef Marzouk](http://uqgroup.mit.edu). A copy of my PhD thesis can be found [here](https://dspace.mit.edu/handle/1721.1/145049). Before MIT, I received my BASc in [Engineering Science](http://engsci.utoronto.ca) from the University of Toronto.
 
