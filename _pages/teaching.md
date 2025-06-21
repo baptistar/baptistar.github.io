@@ -10,7 +10,7 @@ nav_order: 2
 #### Caltech
 - **ACM154 - Inverse Problems and Data Assimilation**, co-instructor in Winter 2024
 - **ACM11 - Introduction to Computational Science and Engineering**, instructor in Spring 2023, 2024
-- **ACM256 - Foundations of measure transport: theory and computation**, co-instructor and course developer in Winter 2023
+- **ACM256 - Foundations of measure transport: theory and computation**, co-instructor and course developer in Winter 2023, 2025
 
 #### MIT
 - **16.S685 - A Hands-on Introduction to Computational Engineering**, co-instructor in Spring 2019

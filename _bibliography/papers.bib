@@ -1,34 +1,14 @@
 ---
 ---
 
-
-
-@article{spantini2019coupling,
-  bibtex_show={true},
-  title={Coupling techniques for nonlinear ensemble filtering},
-  author={Spantini, Alessio and Baptista, Ricardo and Marzouk, Youssef},
-  journal={SIAM Review},
-  volume={64},
-  number={4},
-  pages={921--953},
-  year={2022},
-  publisher={SIAM},
-  abstract={We consider filtering in high-dimensional non-Gaussian state-space models with intractable transition kernels, nonlinear and possibly chaotic dynamics, and sparse observations in space and time. We propose a novel filtering methodology that harnesses transportation of measures, convex optimization, and ideas from probabilistic graphical models to yield robust ensemble approximations of the filtering distribution in high dimensions. Our approach can be understood as the natural generalization of the ensemble Kalman filter (EnKF) to nonlinear updates, using stochastic or deterministic couplings. The use of nonlinear updates can reduce the intrinsic bias of the EnKF at a marginal increase in computational cost. We avoid any form of importance sampling and introduce non-Gaussian localization approaches for dimension scalability. Our framework achieves state-of-the-art tracking performance on challenging configurations of the Lorenz-96 model in the chaotic regime.},
-  abbr={SIAM Review},
-  selected={true},
-  html={https://epubs.siam.org/doi/10.1137/20M1312204},
-  pdf={https://arxiv.org/pdf/1907.00389},
-  code={https://github.com/map-filters/stochasticMaps}
-}
-
 @article{baptista2025mathematical,
+  bibtex_show={true},
   title={A Mathematical Perspective On Contrastive Learning},
   author={Baptista, Ricardo and Stuart, Andrew M and Tran, Son},
-  journal={arXiv preprint arXiv:2505.24134},
+  journal={arXiv:2505.24134},
   abstract={Multimodal contrastive learning is a methodology for linking different data modalities; the canonical example is linking image and text data. The methodology is typically framed as the identification of a set of encoders, one for each modality, that align representations within a common latent space. In this work, we focus on the bimodal setting and interpret contrastive learning as the optimization of (parameterized) encoders that define conditional probability distributions, for each modality conditioned on the other, consistent with the available data. This provides a framework for multimodal algorithms such as crossmodal retrieval, which identifies the mode of one of these conditional distributions, and crossmodal classification, which is similar to retrieval but includes a fine-tuning step to make it task specific.
-The framework we adopt also gives rise to crossmodal generative models. This probabilistic perspective suggests two natural generalizations of contrastive learning: the introduction of novel probabilistic loss functions, and the use of alternative metrics for measuring alignment in the common latent space. We study these generalizations of the classical approach in the multivariate Gaussian setting. In this context we view the latent space identification as a low-rank matrix approximation problem. This allows us to characterize the capabilities of loss functions and alignment metrics to approximate natural statistics, such as conditional means and covariances; doing so yields novel variants on contrastive learning algorithms for specific mode-seeking and for generative tasks. The framework we introduce is also studied through numerical experiments on multivariate Gaussians, the labeled MNIST dataset, and on a data assimilation application arising in oceanography.},
-  year={2025}
-  abstract={arXiv},
+  The framework we adopt also gives rise to crossmodal generative models. This probabilistic perspective suggests two natural generalizations of contrastive learning: the introduction of novel probabilistic loss functions, and the use of alternative metrics for measuring alignment in the common latent space. We study these generalizations of the classical approach in the multivariate Gaussian setting. In this context we view the latent space identification as a low-rank matrix approximation problem. This allows us to characterize the capabilities of loss functions and alignment metrics to approximate natural statistics, such as conditional means and covariances; doing so yields novel variants on contrastive learning algorithms for specific mode-seeking and for generative tasks. The framework we introduce is also studied through numerical experiments on multivariate Gaussians, the labeled MNIST dataset, and on a data assimilation application arising in oceanography.},
+  year={2025},
   abbr={arXiv},
   selected={true},
   pdf={https://arxiv.org/pdf/2505.24134},
@@ -36,9 +16,10 @@ The framework we adopt also gives rise to crossmodal generative models. This pro
 }
 
 @article{bach2025learning,
+  bibtex_show={true},
   title={Learning Enhanced Ensemble Filters},
   author={Bach, Eviatar and Baptista, Ricardo and Calvello, Edoardo and Chen, Bohan and Stuart, Andrew},
-  journal={arXiv preprint arXiv:2504.17836},
+  journal={arXiv:2504.17836},
   year={2025},
   abstract={The filtering distribution in hidden Markov models evolves according to the law of a mean-field model in state-observation space. The ensemble Kalman filter (EnKF) approximates this mean-field model with an ensemble of interacting particles, employing a Gaussian ansatz for the joint distribution of the state and observation at each observation time. These methods are robust, but the Gaussian ansatz limits accuracy. This shortcoming is addressed by approximating the mean-field evolution using a novel form of neural operator taking probability distributions as input: a measure neural mapping (MNM). A MNM is used to design a novel approach to filtering, the MNM-enhanced ensemble filter (MNMEF), which is defined in both the mean-field limit and for interacting ensemble particle approximations. The ensemble approach uses empirical measures as input to the MNM and is implemented using the set transformer, which is invariant to ensemble permutation and allows for different ensemble sizes. The derivation of methods from a mean-field formulation allows a single parameterization of the algorithm to be deployed at different ensemble sizes. In practice fine-tuning of a small number of parameters, for specific ensemble sizes, further enhances the accuracy of the scheme. The promise of the approach is demonstrated by its superior root mean-square-error performance relative to leading methods in filtering the Lorenz 96 and Kuramoto-Sivashinsky models.},
   abbr={arXiv},
@@ -47,9 +28,10 @@ The framework we adopt also gives rise to crossmodal generative models. This pro
 }
 
 @article{baptista2025memorization,
+  bibtex_show={true},
   title={Memorization and Regularization in Generative Diffusion Models},
   author={Baptista, Ricardo and Dasgupta, Agnimitra and Kovachki, Nikola B and Oberai, Assad and Stuart, Andrew M},
-  journal={arXiv preprint arXiv:2501.15785},
+  journal={arXiv:2501.15785},
   year={2025},
   abbr={arXiv},
   abstract={Diffusion models have emerged as a powerful framework for generative modeling. At the heart of the methodology is score matching: learning gradients of families of log-densities for noisy versions of the data distribution at different scales. When the loss function adopted in score matching is evaluated using empirical data, rather than the population loss, the minimizer corresponds to the score of a time-dependent Gaussian mixture. However, use of this analytically tractable minimizer leads to data memorization: in both unconditioned and conditioned settings, the generative model returns the training samples. This paper contains an analysis of the dynamical mechanism underlying memorization. The analysis highlights the need for regularization to avoid reproducing the analytically tractable minimizer; and, in so doing, lays the foundations for a principled understanding of how to regularize. Numerical experiments investigate the properties of: (i) Tikhonov regularization; (ii) regularization designed to promote asymptotic consistency; and (iii) regularizations induced by under-parameterization of a neural network or by early stopping when training a neural network. These experiments are evaluated in the context of memorization, and directions for future development of regularization are highlighted.},
@@ -58,6 +40,7 @@ The framework we adopt also gives rise to crossmodal generative models. This pro
 }
 
 @inproceedings{baptista2025conditional,
+  bibtex_show={true},
   title={Conditional simulation via entropic optimal transport: Toward non-parametric estimation of conditional Brenier maps},
   author={Baptista, Ricardo and Pooladian, Aram-Alexandre and Brennan, Michael and Marzouk, Youssef and Niles-Weed, Jonathan},
   booktitle={The 28th International Conference on Artificial Intelligence and Statistics},
@@ -71,18 +54,24 @@ The framework we adopt also gives rise to crossmodal generative models. This pro
 }
 
 @article{li2024expected,
+  bibtex_show={true},
   title={Expected information gain estimation via density approximations: Sample allocation and dimension reduction},
   author={Li, Fengyi and Baptista, Ricardo and Marzouk, Youssef},
-  journal={arXiv preprint arXiv:2411.08390},
+  journal={arXiv:2411.08390},
+  abstract={Computing expected information gain (EIG) from prior to posterior (equivalently, mutual information between candidate observations and model parameters or other quantities of interest) is a fundamental challenge in Bayesian optimal experimental design. We formulate flexible transport-based schemes for EIG estimation in general nonlinear/non-Gaussian settings, compatible with both standard and implicit Bayesian models. These schemes are representative of two-stage methods for estimating or bounding EIG using marginal and conditional density estimates. In this setting, we analyze the optimal allocation of samples between training (density estimation) and approximation of the outer prior expectation. We show that with this optimal sample allocation, the MSE of the resulting EIG estimator converges more quickly than that of a standard nested Monte Carlo scheme. We then address the estimation of EIG in high dimensions, by deriving gradient-based upper bounds on the mutual information lost by projecting the parameters and/or observations to lower-dimensional subspaces. Minimizing these upper bounds yields projectors and hence low-dimensional EIG approximations that outperform approximations obtained via other linear dimension reduction schemes. Numerical experiments on a PDE-constrained Bayesian inverse problem also illustrate a favorable trade-off between dimension truncation and the modeling of non-Gaussianity, when estimating EIG from finite samples in high dimensions.},
   abbr={arXiv},
   pdf={https://arxiv.org/pdf/2411.08390},
   year={2024}
 }
 
 @article{bach2024inverse,
+  bibtex_show={true},
   title={Inverse Problems and Data Assimilation: A Machine Learning Approach},
   author={Bach, Eviatar and Baptista, Ricardo and Sanz-Alonso, Daniel and Stuart, Andrew},
-  journal={arXiv preprint arXiv:2410.10523},
+  abstract={The aim of these notes is to demonstrate the potential for ideas in machine learning to impact on the fields of inverse problems and data assimilation. The perspective is one that is primarily aimed at researchers from inverse problems and/or data assimilation who wish to see a mathematical presentation of machine learning as it pertains to their fields. As a by-product, we include a succinct mathematical treatment of various topics in machine learning.},
+  journal={arXiv:2410.10523},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2410.10523},
   year={2024}
 }
 
@@ -487,6 +476,24 @@ The framework we adopt also gives rise to crossmodal generative models. This pro
   abstract={The Bayesian framework is commonly used to quantify uncertainty in seismic inversion. To perform Bayesian inference, Markov chain Monte Carlo (MCMC) algorithms are regarded as the gold standard technique for sampling from the posterior probability distribution. Consistent MCMC methods have trouble for complex, high-dimensional models, and most methods scale poorly to large datasets, such as those arising in seismic inversion. As an alternative, approximate MCMC methods based on unadjusted Langevin dynamics offer scalability and more rapid sampling at the cost of biased inference. However, when assessing the quality of approximate MCMC samples for characterizing the posterior distribution, most diagnostics fail to account for these biases. In this work, we introduce the kernel Stein discrepancy (KSD) as a diagnostic tool to determine the convergence of MCMC samples for Bayesian seismic inversion. We demonstrate the use of the KSD for measuring sample quality and selecting the optimal Langevin MCMC algorithm for two Gaussian Bayesian inference problems.},
   html={https://onepetro.org/SEGAM/proceedings-abstract/SEG20/3-SEG20/D031S034R003/462172},
   pdf={https://www.researchgate.net/profile/Muhammad-Izzatullah-2/publication/342361655_Bayesian_seismic_inversion_Measuring_Langevin_MCMC_sample_quality_with_kernels/links/5ef0d022a6fdcc73be94591d/Bayesian-seismic-inversion-Measuring-Langevin-MCMC-sample-quality-with-kernels.pdf}
+}
+
+@article{spantini2019coupling,
+  bibtex_show={true},
+  title={Coupling techniques for nonlinear ensemble filtering},
+  author={Spantini, Alessio and Baptista, Ricardo and Marzouk, Youssef},
+  journal={SIAM Review},
+  volume={64},
+  number={4},
+  pages={921--953},
+  year={2022},
+  publisher={SIAM},
+  abstract={We consider filtering in high-dimensional non-Gaussian state-space models with intractable transition kernels, nonlinear and possibly chaotic dynamics, and sparse observations in space and time. We propose a novel filtering methodology that harnesses transportation of measures, convex optimization, and ideas from probabilistic graphical models to yield robust ensemble approximations of the filtering distribution in high dimensions. Our approach can be understood as the natural generalization of the ensemble Kalman filter (EnKF) to nonlinear updates, using stochastic or deterministic couplings. The use of nonlinear updates can reduce the intrinsic bias of the EnKF at a marginal increase in computational cost. We avoid any form of importance sampling and introduce non-Gaussian localization approaches for dimension scalability. Our framework achieves state-of-the-art tracking performance on challenging configurations of the Lorenz-96 model in the chaotic regime.},
+  abbr={SIAM Review},
+  selected={true},
+  html={https://epubs.siam.org/doi/10.1137/20M1312204},
+  pdf={https://arxiv.org/pdf/1907.00389},
+  code={https://github.com/map-filters/stochasticMaps}
 }
 
 @article{baptista2018optimal,
