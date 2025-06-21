@@ -1,6 +1,8 @@
 ---
 ---
 
+
+
 @article{spantini2019coupling,
   bibtex_show={true},
   title={Coupling techniques for nonlinear ensemble filtering},
@@ -17,6 +19,71 @@
   html={https://epubs.siam.org/doi/10.1137/20M1312204},
   pdf={https://arxiv.org/pdf/1907.00389},
   code={https://github.com/map-filters/stochasticMaps}
+}
+
+@article{baptista2025mathematical,
+  title={A Mathematical Perspective On Contrastive Learning},
+  author={Baptista, Ricardo and Stuart, Andrew M and Tran, Son},
+  journal={arXiv preprint arXiv:2505.24134},
+  abstract={Multimodal contrastive learning is a methodology for linking different data modalities; the canonical example is linking image and text data. The methodology is typically framed as the identification of a set of encoders, one for each modality, that align representations within a common latent space. In this work, we focus on the bimodal setting and interpret contrastive learning as the optimization of (parameterized) encoders that define conditional probability distributions, for each modality conditioned on the other, consistent with the available data. This provides a framework for multimodal algorithms such as crossmodal retrieval, which identifies the mode of one of these conditional distributions, and crossmodal classification, which is similar to retrieval but includes a fine-tuning step to make it task specific.
+The framework we adopt also gives rise to crossmodal generative models. This probabilistic perspective suggests two natural generalizations of contrastive learning: the introduction of novel probabilistic loss functions, and the use of alternative metrics for measuring alignment in the common latent space. We study these generalizations of the classical approach in the multivariate Gaussian setting. In this context we view the latent space identification as a low-rank matrix approximation problem. This allows us to characterize the capabilities of loss functions and alignment metrics to approximate natural statistics, such as conditional means and covariances; doing so yields novel variants on contrastive learning algorithms for specific mode-seeking and for generative tasks. The framework we introduce is also studied through numerical experiments on multivariate Gaussians, the labeled MNIST dataset, and on a data assimilation application arising in oceanography.},
+  year={2025}
+  abstract={arXiv},
+  abbr={arXiv},
+  selected={true},
+  pdf={https://arxiv.org/pdf/2505.24134},
+  html={https://arxiv.org/abs/2505.24134}
+}
+
+@article{bach2025learning,
+  title={Learning Enhanced Ensemble Filters},
+  author={Bach, Eviatar and Baptista, Ricardo and Calvello, Edoardo and Chen, Bohan and Stuart, Andrew},
+  journal={arXiv preprint arXiv:2504.17836},
+  year={2025},
+  abstract={The filtering distribution in hidden Markov models evolves according to the law of a mean-field model in state-observation space. The ensemble Kalman filter (EnKF) approximates this mean-field model with an ensemble of interacting particles, employing a Gaussian ansatz for the joint distribution of the state and observation at each observation time. These methods are robust, but the Gaussian ansatz limits accuracy. This shortcoming is addressed by approximating the mean-field evolution using a novel form of neural operator taking probability distributions as input: a measure neural mapping (MNM). A MNM is used to design a novel approach to filtering, the MNM-enhanced ensemble filter (MNMEF), which is defined in both the mean-field limit and for interacting ensemble particle approximations. The ensemble approach uses empirical measures as input to the MNM and is implemented using the set transformer, which is invariant to ensemble permutation and allows for different ensemble sizes. The derivation of methods from a mean-field formulation allows a single parameterization of the algorithm to be deployed at different ensemble sizes. In practice fine-tuning of a small number of parameters, for specific ensemble sizes, further enhances the accuracy of the scheme. The promise of the approach is demonstrated by its superior root mean-square-error performance relative to leading methods in filtering the Lorenz 96 and Kuramoto-Sivashinsky models.},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2504.17836},
+  html={https://arxiv.org/abs/2504.17836}
+}
+
+@article{baptista2025memorization,
+  title={Memorization and Regularization in Generative Diffusion Models},
+  author={Baptista, Ricardo and Dasgupta, Agnimitra and Kovachki, Nikola B and Oberai, Assad and Stuart, Andrew M},
+  journal={arXiv preprint arXiv:2501.15785},
+  year={2025},
+  abbr={arXiv},
+  abstract={Diffusion models have emerged as a powerful framework for generative modeling. At the heart of the methodology is score matching: learning gradients of families of log-densities for noisy versions of the data distribution at different scales. When the loss function adopted in score matching is evaluated using empirical data, rather than the population loss, the minimizer corresponds to the score of a time-dependent Gaussian mixture. However, use of this analytically tractable minimizer leads to data memorization: in both unconditioned and conditioned settings, the generative model returns the training samples. This paper contains an analysis of the dynamical mechanism underlying memorization. The analysis highlights the need for regularization to avoid reproducing the analytically tractable minimizer; and, in so doing, lays the foundations for a principled understanding of how to regularize. Numerical experiments investigate the properties of: (i) Tikhonov regularization; (ii) regularization designed to promote asymptotic consistency; and (iii) regularizations induced by under-parameterization of a neural network or by early stopping when training a neural network. These experiments are evaluated in the context of memorization, and directions for future development of regularization are highlighted.},
+  pdf={https://arxiv.org/pdf/2501.15785},
+  code={https://github.com/baptistar/DiffusionModelDynamics}
+}
+
+@inproceedings{baptista2025conditional,
+  title={Conditional simulation via entropic optimal transport: Toward non-parametric estimation of conditional Brenier maps},
+  author={Baptista, Ricardo and Pooladian, Aram-Alexandre and Brennan, Michael and Marzouk, Youssef and Niles-Weed, Jonathan},
+  booktitle={The 28th International Conference on Artificial Intelligence and Statistics},
+  abstract={Conditional simulation is a fundamental task in statistical modeling: Generate samples from the conditionals given finitely many data points from a joint distribution. One promising approach is to construct conditional Brenier maps, where the components of the map pushforward a reference distribution to conditionals of the target. While many estimators exist, few, if any, come with statistical or algorithmic guarantees. To this end, we propose a non-parametric estimator for conditional Brenier maps based on the computational scalability of \emph{entropic} optimal transport. Our estimator leverages a result of Carlier et al., (2010), which shows that optimal transport maps under a rescaled quadratic cost asymptotically converge to conditional Brenier maps; our estimator is precisely the entropic analogues of these converging maps. We provide heuristic justifications for how to choose the scaling parameter in the cost as a function of the number of samples by fully characterizing the Gaussian setting. We conclude by comparing the performance of the estimator to other machine learning and non-parametric approaches on benchmark datasets and Bayesian inference problems.},
+  abbr={AISTATS},
+  selected={true},
+  html={https://openreview.net/forum?id=lq0VnDFztt},
+  pdf={https://arxiv.org/pdf/2411.07154},
+  code={https://github.com/aistats2025condsim/ConditionalBrenier},
+  year={2025}
+}
+
+@article{li2024expected,
+  title={Expected information gain estimation via density approximations: Sample allocation and dimension reduction},
+  author={Li, Fengyi and Baptista, Ricardo and Marzouk, Youssef},
+  journal={arXiv preprint arXiv:2411.08390},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2411.08390},
+  year={2024}
+}
+
+@article{bach2024inverse,
+  title={Inverse Problems and Data Assimilation: A Machine Learning Approach},
+  author={Bach, Eviatar and Baptista, Ricardo and Sanz-Alonso, Daniel and Stuart, Andrew},
+  journal={arXiv preprint arXiv:2410.10523},
+  year={2024}
 }
 
 @inproceedings{luk2024learning,
