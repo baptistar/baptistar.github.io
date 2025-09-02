@@ -7,6 +7,10 @@ nav: true
 nav_order: 2
 ---
 
+#### Toronto
+- **STA410 - Statistical Computation**, instructor in Winter 2026
+- **STA2312 - Advanced Computational Methods for Statistics II**, instructor in Winter 2026
+
 #### Caltech
 - **ACM154 - Inverse Problems and Data Assimilation**, co-instructor in Winter 2024
 - **ACM11 - Introduction to Computational Science and Engineering**, instructor in Spring 2023, 2024

@@ -7,7 +7,16 @@ nav: true
 nav_order: 3
 ---
 
+#### Conditional Simulation via Entropic Optimal Transport
+- IPAM Workshop on Non-Commutative Optimal Transport, May 2025, Los Angeles, California
+
+#### Dynamics and Memorization Behaviour of Score-Based Di!usion Models
+- IMSI Workshop on Statistical and Computational Challenges
+in Probabilistic Scientific Machine Learning, June 2025, Chicago, Illinois
+- Southern California Applied Mathematics Symposium, April 2025, Riverside, California
+
 #### Conditional sampling with block-triangular maps
+- Joint Statistical Meeting, July 2025, Nashville, Tennessee
 - IMS Conference on Statistics and Data Science, December 2023, Lisbon, Portugal
 - International Congress on Industrial and Applied Mathematics, August 2023, Tokyo, Japan
 
