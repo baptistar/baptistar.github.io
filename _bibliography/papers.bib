@@ -393,13 +393,13 @@
   pdf={https://arxiv.org/pdf/1711.00950}
 }
 
-@article{feng2024neural,
+@inproceedings{feng2024neural,
   bibtex_show={true},
   title={Neural Approximate Mirror Maps for Constrained Diffusion Models},
-  author={Feng, Berthy T and Baptista, Ricardo and Bouman, Katherine L},
-  journal={arXiv:2406.12816},
-  year={2024},
-  abbr={arXiv},
+  author={Berthy Feng and Ricardo Baptista and Katherine Bouman},
+  booktitle={The Thirteenth International Conference on Learning Representations},
+  year={2025},
+  abbr={ICLR},
   abstract={Diffusion models excel at creating visually-convincing images, but they often struggle to meet subtle constraints inherent in the training data. Such constraints could be physics-based (e.g., satisfying a PDE), geometric (e.g., respecting symmetry), or semantic (e.g., including a particular number of objects). When the training data all satisfy a certain constraint, enforcing this constraint on a diffusion model not only improves its distribution-matching accuracy but also makes it more reliable for generating valid synthetic data and solving constrained inverse problems. However, existing methods for constrained diffusion models are inflexible with different types of constraints. Recent work proposed to learn mirror diffusion models (MDMs) in an unconstrained space defined by a mirror map and to impose the constraint with an inverse mirror map, but analytical mirror maps are challenging to derive for complex constraints. We propose neural approximate mirror maps (NAMMs) for general constraints. Our approach only requires a differentiable distance function from the constraint set. We learn an approximate mirror map that pushes data into an unconstrained space and a corresponding approximate inverse that maps data back to the constraint set. A generative model, such as an MDM, can then be trained in the learned mirror space and its samples restored to the constraint set by the inverse map. We validate our approach on a variety of constraints, showing that compared to an unconstrained diffusion model, a NAMM-based MDM substantially improves constraint satisfaction. We also demonstrate how existing diffusion-based inverse-problem solvers can be easily applied in the learned mirror space to solve constrained inverse problems.},
   html={https://arxiv.org/abs/2406.12816},
   pdf={https://arxiv.org/pdf/2406.12816}
