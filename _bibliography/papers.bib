@@ -15,6 +15,18 @@
   html={https://arxiv.org/abs/2505.24134}
 }
 
+@article{baptista2025proximal,
+  bibtex_show={true},
+  title={Proximal optimal transport divergences},
+  author={Baptista, Ricardo and Birmpa, Panagiota and Katsoulakis, Markos A and Rey-Bellet, Luc and Zhang, Benjamin J},
+  journal={arXiv:2505.12097},
+  year={2025},
+  abstract={We introduce the proximal optimal transport divergence, a novel discrepancy measure that interpolates between information divergences and optimal transport distances via an infimal convolution formulation. This divergence provides a principled foundation for optimal transport proximals and proximal optimization methods frequently used in generative modeling. We explore its mathematical properties, including smoothness, boundedness, and computational tractability, and establish connections to primal-dual formulations and adversarial learning. The proximal operator associated with the proximal optimal transport divergence can be interpreted as a transport map that pushes a reference distribution toward the optimal generative distribution, which approximates the target distribution that is only accessible through data samples. Building on the Benamou-Brenier dynamic formulation of classical optimal transport, we also establish a dynamic formulation for proximal OT divergences. The resulting dynamic formulation is a first order mean-field game whose optimality conditions are governed by a pair of nonlinear partial differential equations: a backward Hamilton-Jacobi equation and a forward continuity equation. Our framework generalizes existing approaches while offering new insights and computational tools for generative modeling, distributionally robust optimization, and gradient-based learning in probability spaces.},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2505.12097},
+  html={https://arxiv.org/abs/2505.12097}
+}
+
 @article{bach2025learning,
   bibtex_show={true},
   title={Learning Enhanced Ensemble Filters},
@@ -91,12 +103,40 @@
   bibtex_show={true},
   title={Efficient Neural Network Approaches for Conditional Optimal Transport with Applications in Bayesian Inference},
   author={Wang, Zheyu Oliver and Baptista, Ricardo and Marzouk, Youssef and Ruthotto, Lars and Verma, Deepanshu},
-  journal={arXiv:2310.16975},
-  year={2023},
+  journal={SIAM Journal on Scientific Computing},
+  volume={47},
+  number={4},
+  pages={C979--C1005},
+  year={2025},
+  publisher={SIAM},
   abstract={We present two neural network approaches that approximate the solutions of static and dynamic conditional optimal transport (COT) problems. Both approaches enable conditional sampling and conditional density estimation, which are core tasks in Bayesian inference–particularly in the simulation-based ("likelihood-free") setting. Our methods represent the target conditional distributions as transformations of a tractable reference distribution and, therefore, fall into the framework of measure transport. Although many measure transport approaches model the transformation as COT maps, obtaining the map is computationally challenging, even in moderate dimensions. To improve scalability, our numerical algorithms use neural networks to parameterize COT maps and further exploit the structure of the COT problem. Our static approach approximates the map as the gradient of a partially input-convex neural network. It uses a novel numerical implementation to increase computational efficiency compared to state-of-the-art alternatives. Our dynamic approach approximates the conditional optimal transport via the flow map of a regularized neural ODE; compared to the static approach, it is slower to train but offers more modeling choices and can lead to faster sampling. We demonstrate both algorithms numerically, comparing them with competing state-of-the-art approaches, using benchmark datasets and simulation-based Bayesian inverse problems.},
-  abbr={arXiv},
+  abbr={SISC},
   html={https://arxiv.org/abs/2310.16975},
   pdf={https://arxiv.org/pdf/2310.16975},
+}
+
+@article{baptista2025solving,
+  bibtex_show={true},
+  title={Solving Roughly Forced Nonlinear PDEs via Misspecified Kernel Methods and Neural Networks},
+  author={Baptista, Ricardo and Calvello, Edoardo and Darcy, Matthieu and Owhadi, Houman and Stuart, Andrew M and Yang, Xianjin},
+  journal={arXiv:2501.17110},
+  year={2025},
+  abstract={We consider the use of Gaussian Processes (GPs) or Neural Networks (NNs) to numerically approximate the solutions to nonlinear partial differential equations (PDEs) with rough forcing or source terms, which commonly arise as pathwise solutions to stochastic PDEs. Kernel methods have recently been generalized to solve nonlinear PDEs by approximating their solutions as the maximum a posteriori estimator of GPs that are conditioned to satisfy the PDE at a finite set of collocation points. The convergence and error guarantees of these methods, however, rely on the PDE being defined in a classical sense and its solution possessing sufficient regularity to belong to the associated reproducing kernel Hilbert space. We propose a generalization of these methods to handle roughly forced nonlinear PDEs while preserving convergence guarantees with an oversmoothing GP kernel that is misspecified relative to the true solution's regularity. This is achieved by conditioning a regular GP to satisfy the PDE with a modified source term in a weak sense (when integrated against a finite number of test functions). This is equivalent to replacing the empirical $L^2$-loss on the PDE constraint by an empirical negative-Sobolev norm. We further show that this loss function can be used to extend physics-informed neural networks (PINNs) to stochastic equations, thereby resulting in a new NN-based variant termed Negative Sobolev Norm-PINN (NeS-PINN).},
+  abbr={arXiv},
+  html={https://arxiv.org/abs/2501.17110},
+  pdf={https://arxiv.org/pdf/2501.17110}
+}
+
+@inproceedings{conger2025computing,
+  bibtex_show={true},
+  title={Computing Optimal Transport Plans via Min-Max Gradient Flows},
+  author={Conger, Lauren and Hoffmann, Franca and Baptista, Ricardo and Mazumdar, Eric},
+  booktitle={IEEE Conference on Decision and Control},
+  abstract={We pose the Kantorovich optimal transport problem as a min-max problem with a Nash equilibrium that can be obtained dynamically via a two-player game, providing a framework for approximating optimal couplings. We prove convergence of the timescale-separated gradient descent dynamics to the optimal transport plan, and implement the gradient descent algorithm with a particle method, where the marginal constraints are enforced weakly using the KL divergence, automatically selecting a dynamical adaptation of the regularizer. The numerical results highlight the different advantages of using the standard Kullback-Leibler (KL) divergence versus the reverse KL divergence with this approach, opening the door for new methodologies.},
+  abbr={IEEE},
+  year={2025},
+  html={https://arxiv.org/abs/2504.16890},
+  pdf={https://arxiv.org/pdf/2504.16890}
 }
 
 @article{baptista2020adaptive,
@@ -132,6 +172,21 @@
   html={https://www.pnas.org/doi/10.1073/pnas.2403449121},
   pdf={https://arxiv.org/pdf/2311.17007},
   code={https://github.com/TheoBourdais/ComputationalHypergraphDiscovery}
+}
+
+@inproceedings{liaw2025learning,
+  bibtex_show={true},
+  title={Learning Local Neighborhoods of Non-Gaussian Graphical Models: A measure transport approach},
+  author={Liaw, Sarah and Morrison, Rebecca and Marzouk, Youssef and Baptista, Ricardo},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={18},
+  pages={18711--18718},
+  year={2025},
+  abstract={Identifying the Markov properties or conditional independencies of a collection of random variables is a fundamental task in statistics for modeling and inference. Existing approaches often learn the structure of a probabilistic graph, which encodes these dependencies, by assuming that the variables follow a distribution with a simple parametric form. Moreover, the computational cost of many algorithms scales poorly for high-dimensional distributions, as they need to estimate all the edges in the graph simultaneously. In this work, we propose a scalable algorithm to infer the conditional independence relationships of each variable by exploiting the local Markov property. The proposed method, named Localized Sparsity Identification for Non-Gaussian Distributions (L-SING), estimates the graph by using flexible classes of transport maps to represent the conditional distribution for each variable. We show that L-SING includes existing approaches, such as neighborhood selection with Lasso, as a special case. We demonstrate the effectiveness of our algorithm in both Gaussian and non-Gaussian settings by comparing it to existing methods. Lastly, we show the scalability of the proposed approach by applying it to high-dimensional non-Gaussian examples, including a biological dataset with more than 150 variables.},
+  abbr={AAAI},
+  html={https://arxiv.org/abs/2503.13899},
+  pdf={https://arxiv.org/pdf/2503.13899}
 }
 
 @inproceedings{brennan2022dimension,
@@ -435,7 +490,6 @@
   bibtex_show={true},
   title={Conditional Sampling with Monotone {GAN}s: from Generative Models to Likelihood-Free Inference},
   author={Baptista, Ricardo and Hosseini, Bamdad and Kovachki, Nikola B and Marzouk, Youssef},
-  selected={true},
   abbr={JUQ},
   journal = {SIAM/ASA Journal on Uncertainty Quantification},
   volume = {12},
