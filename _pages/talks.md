@@ -8,12 +8,14 @@ nav_order: 3
 ---
 
 #### Conditional Simulation via Entropic Optimal Transport
+- The Fast and Curious 2: MCMC in Action Workshop, September 2025, Toronto, Canada
 - IPAM Workshop on Non-Commutative Optimal Transport, May 2025, Los Angeles, California
 
-#### Dynamics and Memorization Behaviour of Score-Based Di!usion Models
+#### Dynamics and Memorization Behaviour of Score-Based Diffusion Models
 - IMSI Workshop on Statistical and Computational Challenges
 in Probabilistic Scientific Machine Learning, June 2025, Chicago, Illinois
 - Southern California Applied Mathematics Symposium, April 2025, Riverside, California
+- CMS Winter Meeting, December 2024, Vancouver, Canada
 
 #### Conditional sampling with block-triangular maps
 - Joint Statistical Meeting, July 2025, Nashville, Tennessee
