@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Statistical Sciences, <a href='https://www.utoronto.ca/'>University of Toronto</a>
+subtitle: <a href='https://www.statistics.utoronto.ca'>Statistical Sciences</a>, University of Toronto
 
 profile:
   align: right
@@ -16,10 +16,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page 
 ---
 
-Since Fall 2025, I am an Assistant Professor of [Statistical Sciences](https://www.statistics.utoronto.ca) at the University of Toronto and a Faculty Affiliate at the [Vector Institute](https://vectorinstitute.ai/). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing and analyzing generative models based on computational measure transport.
+Since Fall 2025, I am an Assistant Professor at the [University of Toronto](https://www.utoronto.ca/) and a Faculty Affiliate at the [Vector Institute](https://vectorinstitute.ai/). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing and analyzing generative models based on computational measure transport.
 
-Bio: I was a von Kármán instructor at Caltech in [Computing + Mathematical Sciences](http://cms.caltech.edu) and a Postdoctoral Scientist at [Amazon Search](https://www.amazon.science) where I was hosted by Andrew Stuart. I completed my PhD at MIT in Computational Science and Engineering where I was fortunate to be advised by [Youssef Marzouk](http://uqgroup.mit.edu). I also received my BASc in [Engineering Science](http://engsci.utoronto.ca) from the University of Toronto.
-
+Bio: Before moving to Toronto, I was a von Kármán instructor at Caltech in [Computing + Mathematical Sciences](http://cms.caltech.edu) where I was hosted by [Andrew Stuart](http://stuart.caltech.edu/) and [Houman Owhadi](https://users.cms.caltech.edu/~owhadi/), as well as a Postdoctoral Scientist at [Amazon Search](https://www.amazon.science). I received my PhD from MIT in Computational Science and Engineering, where I was advised by [Youssef Marzouk](http://uqgroup.mit.edu), and my BASc from the University of Toronto in [Engineering Science](http://engsci.utoronto.ca).
 
 **Contact**: r.baptista (at) utoronto (dot) ca\\
 **Follow**: <a href="https://scholar.google.com/citations?user=rdYO0XYAAAAJ&hl=en" title="Google Scholar"><i class="    ai ai-google-scholar"></i> Google Scholar </a>&emsp;
