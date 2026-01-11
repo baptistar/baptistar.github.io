@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page 
 ---
 
-Since Fall 2025, I am an Assistant Professor at the [University of Toronto](https://www.utoronto.ca/) and a Faculty Affiliate at the [Vector Institute](https://vectorinstitute.ai/). My research is on probabilistic modeling and inference for problems in science and engineering. Most recently, I have been developing and analyzing generative models based on computational measure transport.
+I recently joined the [University of Toronto](https://www.utoronto.ca/) as an Assistant Professor and the [Vector Institute](https://vectorinstitute.ai/) as a Faculty Affiliate. My research focuses on the foundations of probabilistic modeling and inference, motivated by applications in science and engineering. Recently, I have been developing new methodology and studying the properties of generative models based on computational measure transport.
 
 Bio: Before moving to Toronto, I was a von Kármán instructor at Caltech in [Computing + Mathematical Sciences](http://cms.caltech.edu) where I was hosted by [Andrew Stuart](http://stuart.caltech.edu/) and [Houman Owhadi](https://users.cms.caltech.edu/~owhadi/), as well as a Postdoctoral Scientist at [Amazon Search](https://www.amazon.science). I received my PhD from MIT in Computational Science and Engineering, where I was advised by [Youssef Marzouk](http://uqgroup.mit.edu), and my BASc from the University of Toronto in [Engineering Science](http://engsci.utoronto.ca).
 
