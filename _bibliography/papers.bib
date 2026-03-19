@@ -1,6 +1,29 @@
 ---
 ---
 
+@article{mammadov2026variational,
+  title={Variational Flow Maps: Make Some Noise for One-Step Conditional Generation},
+  author={Mammadov, Abbas and Takao, So and Chen, Bohan and Baptista, Ricardo and Mardani, Morteza and Teh, Yee Whye and Berner, Julius},
+  journal={arXiv:2603.07276},
+  abstract={Flow maps enable high-quality image generation in a single forward pass. However, unlike iterative diffusion models, their lack of an explicit sampling trajectory impedes incorporating external constraints for conditional generation and solving inverse problems. We put forth Variational Flow Maps, a framework for conditional sampling that shifts the perspective of conditioning from "guiding a sampling path", to that of "learning the proper initial noise". Specifically, given an observation, we seek to learn a noise adapter model that outputs a noise distribution, so that after mapping to the data space via flow map, the samples respect the observation and data prior. To this end, we develop a principled variational objective that jointly trains the noise adapter and the flow map, improving noise-data alignment, such that sampling from complex data posterior is achieved with a simple adapter. Experiments on various inverse problems show that VFMs produce well-calibrated conditional samples in a single (or few) steps. For ImageNet, VFM attains competitive fidelity while accelerating the sampling by orders of magnitude compared to alternative iterative diffusion/flow models.},
+  abbr={arXiv},
+  year={2026},
+  pdf={https://arxiv.org/pdf/2603.07276},
+  html={https://arxiv.org/abs/2603.07276}  
+}
+
+@article{baptista2026large,
+  bibtex_show={true},
+  title={Large Language Models: A Mathematical Formulation},
+  author={Baptista, Ricardo and Stuart, Andrew and Tran, Son},
+  journal={arXiv:2601.22170},
+  abstract={Large language models (LLMs) process and predict sequences containing text to answer questions, and address tasks including document summarization, providing recommendations, writing software and solving quantitative problems. We provide a mathematical framework for LLMs by describing the encoding of text sequences into sequences of tokens, defining the architecture for next-token prediction models, explaining how these models are learned from data, and demonstrating how they are deployed to address a variety of tasks. The mathematical sophistication required to understand this material is not high, and relies on straightforward ideas from information theory, probability and optimization. Nonetheless, the combination of ideas resting on these different components from the mathematical sciences yields a complex algorithmic structure; and this algorithmic structure has demonstrated remarkable empirical successes. The mathematical framework established here provides a platform from which it is possible to formulate and address questions concerning the accuracy, efficiency and robustness of the algorithms that constitute LLMs. The framework also suggests directions for development of modified and new methodologies.},
+  abbr={arXiv},
+  year={2026},
+  pdf={https://arxiv.org/pdf/2601.22170},
+  html={https://arxiv.org/abs/2601.22170}
+}
+
 @article{baptista2025knothe,
   bibtex_show={true},
   title={Knothe-Rosenblatt maps via soft-constrained optimal transport},
@@ -55,10 +78,12 @@
   bibtex_show={true},
   title={Learning Enhanced Ensemble Filters},
   author={Bach, Eviatar and Baptista, Ricardo and Calvello, Edoardo and Chen, Bohan and Stuart, Andrew},
-  journal={arXiv:2504.17836},
+  journal={Journal of Computational Physics},
+  pages={114550},
+  publisher={Elsevier},
   year={2025},
   abstract={The filtering distribution in hidden Markov models evolves according to the law of a mean-field model in state-observation space. The ensemble Kalman filter (EnKF) approximates this mean-field model with an ensemble of interacting particles, employing a Gaussian ansatz for the joint distribution of the state and observation at each observation time. These methods are robust, but the Gaussian ansatz limits accuracy. This shortcoming is addressed by approximating the mean-field evolution using a novel form of neural operator taking probability distributions as input: a measure neural mapping (MNM). A MNM is used to design a novel approach to filtering, the MNM-enhanced ensemble filter (MNMEF), which is defined in both the mean-field limit and for interacting ensemble particle approximations. The ensemble approach uses empirical measures as input to the MNM and is implemented using the set transformer, which is invariant to ensemble permutation and allows for different ensemble sizes. The derivation of methods from a mean-field formulation allows a single parameterization of the algorithm to be deployed at different ensemble sizes. In practice fine-tuning of a small number of parameters, for specific ensemble sizes, further enhances the accuracy of the scheme. The promise of the approach is demonstrated by its superior root mean-square-error performance relative to leading methods in filtering the Lorenz 96 and Kuramoto-Sivashinsky models.},
-  abbr={arXiv},
+  abbr={JCP},
   pdf={https://arxiv.org/pdf/2504.17836},
   html={https://arxiv.org/abs/2504.17836}
 }
@@ -502,10 +527,14 @@
   bibtex_show={true},
   title={Coupled Input-Output Dimension Reduction: Application to Goal-oriented Bayesian Experimental Design and Global Sensitivity Analysis},
   author={Chen, Qiao and Arnaud, Elise and Baptista, Ricardo and Zahm, Olivier},
-  journal={arXiv:2406.13425},
-  year={2024},
+  journal={SIAM Journal on Scientific Computing},
+  volume={47},
+  number={5},
+  pages={A2403--A2430},
+  year={2025},
+  publisher={SIAM},
   abstract={We introduce a new method to jointly reduce the dimension of the input and output space of a high-dimensional function. Choosing a reduced input subspace influences which output subspace is relevant and vice versa. Conventional methods focus on reducing either the input or output space, even though both are often reduced simultaneously in practice. Our coupled approach naturally supports goal-oriented dimension reduction, where either an input or output quantity of interest is prescribed. We consider, in particular, goal-oriented sensor placement and goal-oriented sensitivity analysis, which can be viewed as dimension reduction where the most important output or, respectively, input components are chosen. Both applications present difficult combinatorial optimization problems with expensive objectives such as the expected information gain and Sobol indices. By optimizing gradient-based bounds, we can determine the most informative sensors and most sensitive parameters as the largest diagonal entries of some diagnostic matrices, thus bypassing the combinatorial optimization and objective evaluation.},
-  abbr={arXiv},
+  abbr={SISC},
   html={https://arxiv.org/abs/2406.13425},
   pdf={https://arxiv.org/pdf/2406.13425.pdf}
 }
